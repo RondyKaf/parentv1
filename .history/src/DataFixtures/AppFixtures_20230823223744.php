@@ -22,18 +22,9 @@ class AppFixtures extends Fixture
 
         $pin1 = new Pins();
         $pin1->setTitle("Consultation Epidemie");
-        $pin1->setDescription("tu souffres d'une épidemie très rare");
+        $pin1->setDescription("tu souffres d'une épidemie qui");
 
         $manager->persist($pin1);
-
-
-        $pin2 = new Pins();
-        $pin2->setTitle("1 pin");
-        $pin2->setDescription("tu souffres d'une épidemie très rare");
-
-        $manager->persist($pin2);
-
-
         $manager->flush();
     }
 }

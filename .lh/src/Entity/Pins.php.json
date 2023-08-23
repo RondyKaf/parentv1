@@ -1,0 +1,166 @@
+{
+    "sourceFile": "src/Entity/Pins.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 37,
+            "patches": [
+                {
+                    "date": 1692762018492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692762041480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,5 +78,6 @@\n         $this->updatedAt = $updatedAt;\n \n         return $this;\n     }\n+    publ\n }\n"
+                },
+                {
+                    "date": 1692762058024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,6 +78,6 @@\n         $this->updatedAt = $updatedAt;\n \n         return $this;\n     }\n-    publ\n+    publicunction\n }\n"
+                },
+                {
+                    "date": 1692762065102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,6 +78,6 @@\n         $this->updatedAt = $updatedAt;\n \n         return $this;\n     }\n-    publicunction\n+    public function \n }\n"
+                },
+                {
+                    "date": 1692762074443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,6 +78,6 @@\n         $this->updatedAt = $updatedAt;\n \n         return $this;\n     }\n-    public function \n+    public function update\n }\n"
+                },
+                {
+                    "date": 1692762083477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,6 +78,6 @@\n         $this->updatedAt = $updatedAt;\n \n         return $this;\n     }\n-    public function update\n+    public function updateTimes\n }\n"
+                },
+                {
+                    "date": 1692762095126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,6 +78,6 @@\n         $this->updatedAt = $updatedAt;\n \n         return $this;\n     }\n-    public function updateTimes\n+    public function updateTimesstamps\n }\n"
+                },
+                {
+                    "date": 1692762146962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,6 +78,7 @@\n         $this->updatedAt = $updatedAt;\n \n         return $this;\n     }\n+    #[ORM\\PrePersist]\n     public function updateTimesstamps\n }\n"
+                },
+                {
+                    "date": 1692762154740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,6 +79,8 @@\n \n         return $this;\n     }\n     #[ORM\\PrePersist]\n-    public function updateTimesstamps\n+    public function updateTimesstamps(){\n+        \n+    }\n }\n"
+                },
+                {
+                    "date": 1692762202350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,8 +79,9 @@\n \n         return $this;\n     }\n     #[ORM\\PrePersist]\n+    \n     public function updateTimesstamps(){\n-        \n+\n     }\n }\n"
+                },
+                {
+                    "date": 1692762209278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,9 +79,9 @@\n \n         return $this;\n     }\n     #[ORM\\PrePersist]\n-    \n+    #[ORM]\n     public function updateTimesstamps(){\n \n     }\n }\n"
+                },
+                {
+                    "date": 1692762216873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,9 +79,9 @@\n \n         return $this;\n     }\n     #[ORM\\PrePersist]\n-    #[ORM]\n+    #[ORM\\Pre]\n     public function updateTimesstamps(){\n \n     }\n }\n"
+                },
+                {
+                    "date": 1692762263468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,9 +79,10 @@\n \n         return $this;\n     }\n     #[ORM\\PrePersist]\n-    #[ORM\\Pre]\n-    public function updateTimesstamps(){\n-\n+    #[ORM\\PreUpdate]\n+    public function updateTimesstamps()\n+    {\n+        \n     }\n-}\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692762277309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,7 +82,7 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesstamps()\n     {\n-        \n+        $this->set\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692762282531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,7 +82,8 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesstamps()\n     {\n-        $this->set\n+        $this->setCreatedAt();\n+        \n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692762288491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,7 +83,7 @@\n     #[ORM\\PreUpdate]\n     public function updateTimesstamps()\n     {\n         $this->setCreatedAt();\n-        \n+        $this->\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692762296360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,7 +83,7 @@\n     #[ORM\\PreUpdate]\n     public function updateTimesstamps()\n     {\n         $this->setCreatedAt();\n-        $this->\n+        $this->setUpdatedAt\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692762426174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,7 +83,7 @@\n     #[ORM\\PreUpdate]\n     public function updateTimesstamps()\n     {\n         $this->setCreatedAt();\n-        $this->setUpdatedAt\n+        $this->setUpdatedAt();\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692762473714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,8 +82,8 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesstamps()\n     {\n-        $this->setCreatedAt();\n+        $this->setCreatedAt;\n         $this->setUpdatedAt();\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692762490414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,8 +82,8 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesstamps()\n     {\n-        $this->setCreatedAt;\n-        $this->setUpdatedAt();\n+        $this->setCreatedAt();\n+        $this->setUpdatedAt;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692762498332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,8 +82,8 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesstamps()\n     {\n-        $this->setCreatedAt();\n+        $this->setCreatedAt(new \\DateTime);\n         $this->setUpdatedAt;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692762504092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,8 +82,8 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesstamps()\n     {\n-        $this->setCreatedAt(new \\DateTime);\n+        $this->setCreatedAt(new \\DateTimeI);\n         $this->setUpdatedAt;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692762509733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,8 +82,8 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesstamps()\n     {\n-        $this->setCreatedAt(new \\DateTimeI);\n-        $this->setUpdatedAt;\n+        $this->setCreatedAt(new \\DateTimeImmutable);\n+        $this->setUpdatedAt(new );\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692762516276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,7 +83,7 @@\n     #[ORM\\PreUpdate]\n     public function updateTimesstamps()\n     {\n         $this->setCreatedAt(new \\DateTimeImmutable);\n-        $this->setUpdatedAt(new );\n+        $this->setUpdatedAt(new \\DateTimeImmutable);\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692762654777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,8 +82,9 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesstamps()\n     {\n+        \n         $this->setCreatedAt(new \\DateTimeImmutable);\n         $this->setUpdatedAt(new \\DateTimeImmutable);\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692762659993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesstamps()\n     {\n-        \n+        if(getCre)\n         $this->setCreatedAt(new \\DateTimeImmutable);\n         $this->setUpdatedAt(new \\DateTimeImmutable);\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692762667204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesstamps()\n     {\n-        if(getCre)\n+        if($this->)\n         $this->setCreatedAt(new \\DateTimeImmutable);\n         $this->setUpdatedAt(new \\DateTimeImmutable);\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692762673332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesstamps()\n     {\n-        if($this->)\n+        if($this->getCreatedAt() == null)\n         $this->setCreatedAt(new \\DateTimeImmutable);\n         $this->setUpdatedAt(new \\DateTimeImmutable);\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692762689023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,10 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesstamps()\n     {\n-        if($this->getCreatedAt() == null)\n-        $this->setCreatedAt(new \\DateTimeImmutable);\n+        if($this->getCreatedAt() == null){\n+\n+        }\n         $this->setUpdatedAt(new \\DateTimeImmutable);\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692762900881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n \n     #[ORM\\Column]\n     private ?\\DateTimeImmutable $createdAt = null;\n \n-    #[ORM\\Column]\n+    #[ORM\\Column,op]\n     private ?\\DateTimeImmutable $updatedAt = null;\n \n     public function getId(): ?int\n     {\n@@ -82,9 +82,10 @@\n     #[ORM\\PrePersist]\n     #[ORM\\PreUpdate]\n     public function updateTimesstamps()\n     {\n-        if($this->getCreatedAt() == null){\n+        if ($this->getCreatedAt() == null) {\n+            $this->setCreatedAt(new \\DateTimeImmutable);\n \n         }\n         $this->setUpdatedAt(new \\DateTimeImmutable);\n     }\n"
+                },
+                {
+                    "date": 1692762910871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n \n     #[ORM\\Column]\n     private ?\\DateTimeImmutable $createdAt = null;\n \n-    #[ORM\\Column,op]\n+    #[ORM\\Column]\n     private ?\\DateTimeImmutable $updatedAt = null;\n \n     public function getId(): ?int\n     {\n"
+                },
+                {
+                    "date": 1692762917910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,9 @@\n     #[ORM\\Column]\n     private ?\\DateTimeImmutable $createdAt = null;\n \n     #[ORM\\Column]\n+    #[op]\n     private ?\\DateTimeImmutable $updatedAt = null;\n \n     public function getId(): ?int\n     {\n"
+                },
+                {
+                    "date": 1692762936994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     #[ORM\\Column]\n     private ?\\DateTimeImmutable $createdAt = null;\n \n     #[ORM\\Column]\n-    #[op]\n+\n     private ?\\DateTimeImmutable $updatedAt = null;\n \n     public function getId(): ?int\n     {\n"
+                },
+                {
+                    "date": 1692763005878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,13 +20,12 @@\n \n     #[ORM\\Column(type: Types::TEXT)]\n     private ?string $description = null;\n \n-    #[ORM\\Column]\n+    #[ORM\\Column()]\n     private ?\\DateTimeImmutable $createdAt = null;\n \n     #[ORM\\Column]\n-\n     private ?\\DateTimeImmutable $updatedAt = null;\n \n     public function getId(): ?int\n     {\n"
+                },
+                {
+                    "date": 1692763016083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \n     #[ORM\\Column(type: Types::TEXT)]\n     private ?string $description = null;\n \n-    #[ORM\\Column()]\n+    #[ORM\\Column(options:)]\n     private ?\\DateTimeImmutable $createdAt = null;\n \n     #[ORM\\Column]\n     private ?\\DateTimeImmutable $updatedAt = null;\n"
+                },
+                {
+                    "date": 1692763022943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \n     #[ORM\\Column(type: Types::TEXT)]\n     private ?string $description = null;\n \n-    #[ORM\\Column(options:)]\n+    #[ORM\\Column(options:[])]\n     private ?\\DateTimeImmutable $createdAt = null;\n \n     #[ORM\\Column]\n     private ?\\DateTimeImmutable $updatedAt = null;\n"
+                },
+                {
+                    "date": 1692763028706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \n     #[ORM\\Column(type: Types::TEXT)]\n     private ?string $description = null;\n \n-    #[ORM\\Column(options:[de])]\n+    #[ORM\\Column(options:[def])]\n     private ?\\DateTimeImmutable $createdAt = null;\n \n     #[ORM\\Column]\n     private ?\\DateTimeImmutable $updatedAt = null;\n"
+                },
+                {
+                    "date": 1692763098298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,8 @@\n     #[ORM\\Column(options:[\"default\"=>\"CURRENT_TEMSTAMP\"])]\n     private ?\\DateTimeImmutable $createdAt = null;\n \n     #[ORM\\Column(options:[\"default\"=>\"CURRENT_TEMSTAMP\"])]\n-\n     private ?\\DateTimeImmutable $updatedAt = null;\n \n     public function getId(): ?int\n     {\n"
+                }
+            ],
+            "date": 1692762018492,
+            "name": "Commit-0",
+            "content": "<?php\n\nnamespace App\\Entity;\n\nuse App\\Repository\\PinsRepository;\nuse Doctrine\\DBAL\\Types\\Types;\nuse Doctrine\\ORM\\Mapping as ORM;\n\n#[ORM\\Entity(repositoryClass: PinsRepository::class)]\n#[ORM\\HasLifecycleCallbacks]\nclass Pins\n{\n    #[ORM\\Id]\n    #[ORM\\GeneratedValue]\n    #[ORM\\Column]\n    private ?int $id = null;\n\n    #[ORM\\Column(length: 255)]\n    private ?string $title = null;\n\n    #[ORM\\Column(type: Types::TEXT)]\n    private ?string $description = null;\n\n    #[ORM\\Column]\n    private ?\\DateTimeImmutable $createdAt = null;\n\n    #[ORM\\Column]\n    private ?\\DateTimeImmutable $updatedAt = null;\n\n    public function getId(): ?int\n    {\n        return $this->id;\n    }\n\n    public function getTitle(): ?string\n    {\n        return $this->title;\n    }\n\n    public function setTitle(string $title): static\n    {\n        $this->title = $title;\n\n        return $this;\n    }\n\n    public function getDescription(): ?string\n    {\n        return $this->description;\n    }\n\n    public function setDescription(string $description): static\n    {\n        $this->description = $description;\n\n        return $this;\n    }\n\n    public function getCreatedAt(): ?\\DateTimeImmutable\n    {\n        return $this->createdAt;\n    }\n\n    public function setCreatedAt(\\DateTimeImmutable $createdAt): static\n    {\n        $this->createdAt = $createdAt;\n\n        return $this;\n    }\n\n    public function getUpdatedAt(): ?\\DateTimeImmutable\n    {\n        return $this->updatedAt;\n    }\n\n    public function setUpdatedAt(\\DateTimeImmutable $updatedAt): static\n    {\n        $this->updatedAt = $updatedAt;\n\n        return $this;\n    }\n}\n"
+        }
+    ]
+}

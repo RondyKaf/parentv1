@@ -1,0 +1,30 @@
+{
+    "sourceFile": "migrations/Version20230823035229.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1692762783916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692762793936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n final class Version20230823035229 extends AbstractMigration\n {\n     public function getDescription(): string\n     {\n-        return 'Add create_';\n+        return 'Add create_at and update`-';\n     }\n \n     public function up(Schema $schema): void\n     {\n"
+                },
+                {
+                    "date": 1692762810039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n final class Version20230823035229 extends AbstractMigration\n {\n     public function getDescription(): string\n     {\n-        return 'Add create_at and update`-';\n+        return 'Add create_at and update_at fieds to';\n     }\n \n     public function up(Schema $schema): void\n     {\n"
+                },
+                {
+                    "date": 1692762817333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n final class Version20230823035229 extends AbstractMigration\n {\n     public function getDescription(): string\n     {\n-        return 'Add create_at and update_at fieds to';\n+        return 'Add create_at and update_at fields';\n     }\n \n     public function up(Schema $schema): void\n     {\n"
+                }
+            ],
+            "date": 1692762783916,
+            "name": "Commit-0",
+            "content": "<?php\n\ndeclare(strict_types=1);\n\nnamespace DoctrineMigrations;\n\nuse Doctrine\\DBAL\\Schema\\Schema;\nuse Doctrine\\Migrations\\AbstractMigration;\n\n/**\n * Auto-generated Migration: Please modify to your needs!\n */\nfinal class Version20230823035229 extends AbstractMigration\n{\n    public function getDescription(): string\n    {\n        return 'Add create_';\n    }\n\n    public function up(Schema $schema): void\n    {\n        // this up() migration is auto-generated, please modify it to your needs\n        $this->addSql('ALTER TABLE pins ADD created_at DATETIME NOT NULL COMMENT \\'(DC2Type:datetime_immutable)\\', ADD updated_at DATETIME NOT NULL COMMENT \\'(DC2Type:datetime_immutable)\\'');\n    }\n\n    public function down(Schema $schema): void\n    {\n        // this down() migration is auto-generated, please modify it to your needs\n        $this->addSql('ALTER TABLE pins DROP created_at, DROP updated_at');\n    }\n}\n"
+        }
+    ]
+}

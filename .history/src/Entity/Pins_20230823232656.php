@@ -2,7 +2,6 @@
 
 namespace App\Entity;
 
-use App\Entity\Traits\Timestampables;
 use App\Repository\PinsRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
@@ -12,7 +11,7 @@ use Doctrine\ORM\Mapping as ORM;
 class Pins
 {
 
-    use Timestampables;
+    usee Ti
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]

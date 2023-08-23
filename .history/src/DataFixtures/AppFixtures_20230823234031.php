@@ -28,12 +28,12 @@ class AppFixtures extends Fixture
 
 
         $pin2 = new Pins();
-        $pin2->setTitle("1 pin");
+        $pin2->setTitle("Consultation Epidemie");
         $pin2->setDescription("tu souffres d'une épidemie très rare");
 
         $manager->persist($pin2);
 
-
+        
         $manager->flush();
     }
 }
