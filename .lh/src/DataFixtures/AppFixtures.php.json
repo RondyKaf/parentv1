@@ -1,0 +1,54 @@
+{
+    "sourceFile": "src/DataFixtures/AppFixtures.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1692757462286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692757474453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n     {\n         // $product = new Product();\n         // $manager->persist($product);\n \n-        ^pin\n+        $pin = new Pin\n         $manager->flush();\n     }\n }\n"
+                },
+                {
+                    "date": 1692757481074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n <?php\n \n namespace App\\DataFixtures;\n \n+use App\\Entity\\Pins;\n use Doctrine\\Bundle\\FixturesBundle\\Fixture;\n use Doctrine\\Persistence\\ObjectManager;\n \n class AppFixtures extends Fixture\n@@ -11,8 +12,9 @@\n     {\n         // $product = new Product();\n         // $manager->persist($product);\n \n-        $pin = new Pin\n+        $pin = new Pins();\n+        $pin->\n         $manager->flush();\n     }\n }\n"
+                },
+                {
+                    "date": 1692757486135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n         // $product = new Product();\n         // $manager->persist($product);\n \n         $pin = new Pins();\n-        $pin->\n+        $pin->setTitle()\n         $manager->flush();\n     }\n }\n"
+                },
+                {
+                    "date": 1692757491625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n         // $product = new Product();\n         // $manager->persist($product);\n \n         $pin = new Pins();\n-        $pin->setTitle()\n+        $pin->setTitle(\"\")\n         $manager->flush();\n     }\n }\n"
+                },
+                {
+                    "date": 1692757500616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n         // $product = new Product();\n         // $manager->persist($product);\n \n         $pin = new Pins();\n-        $pin->setTitle(\"\")\n+        $pin->setTitle(\"je suis le prem\")\n         $manager->flush();\n     }\n }\n"
+                },
+                {
+                    "date": 1692757511747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n         // $product = new Product();\n         // $manager->persist($product);\n \n         $pin = new Pins();\n-        $pin->setTitle(\"je suis le prem\")\n+        $pin->setTitle(\"je suis le premier titre\");\n+        $pin->setDescription()\n         $manager->flush();\n     }\n }\n"
+                },
+                {
+                    "date": 1692757520032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n         // $manager->persist($product);\n \n         $pin = new Pins();\n         $pin->setTitle(\"je suis le premier titre\");\n-        $pin->setDescription()\n+        $pin->setDescription('je suis la description')\n         $manager->flush();\n     }\n }\n"
+                },
+                {
+                    "date": 1692757526370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,10 @@\n         // $manager->persist($product);\n \n         $pin = new Pins();\n         $pin->setTitle(\"je suis le premier titre\");\n-        $pin->setDescription('je suis la description')\n+        $pin->setDescription('je suis la description');\n+\n+        $m\n         $manager->flush();\n     }\n }\n"
+                },
+                {
+                    "date": 1692757533545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,8 @@\n         $pin = new Pins();\n         $pin->setTitle(\"je suis le premier titre\");\n         $pin->setDescription('je suis la description');\n \n-        $manager->persist()\n+        $manager->persist($pin);\n         $manager->flush();\n     }\n }\n"
+                }
+            ],
+            "date": 1692757462286,
+            "name": "Commit-0",
+            "content": "<?php\n\nnamespace App\\DataFixtures;\n\nuse Doctrine\\Bundle\\FixturesBundle\\Fixture;\nuse Doctrine\\Persistence\\ObjectManager;\n\nclass AppFixtures extends Fixture\n{\n    public function load(ObjectManager $manager): void\n    {\n        // $product = new Product();\n        // $manager->persist($product);\n\n        ^pin\n        $manager->flush();\n    }\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "sourceFile": "src/Twig/Runtime/AppExtensionRuntime.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 22,
+            "patches": [
+                {
+                    "date": 1692758781084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692758788293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,7 @@\n     }\n \n     public function doSomething($value)\n     {\n-        retun \n+        return \"rondy\"\n     }\n }\n"
+                },
+                {
+                    "date": 1692758804653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,7 @@\n     }\n \n     public function doSomething($value)\n     {\n-        return \"rondy\"\n+        // ...\n     }\n }\n"
+                },
+                {
+                    "date": 1692758940615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,6 +13,7 @@\n \n     public function doSomething($value)\n     {\n         // ...\n+        return \"rondy\"\n     }\n }\n"
+                },
+                {
+                    "date": 1692759011122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n     {\n         // Inject dependencies if needed\n     }\n \n-    public function doSomething($value)\n+    public function doSomething($count, $)\n     {\n         // ...\n-        return \"rondy\"\n+        return \"rondy\";\n     }\n-}\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692759019361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     {\n         // Inject dependencies if needed\n     }\n \n-    public function doSomething($count, $)\n+    public function doSomething($count, $singular)\n     {\n         // ...\n         return \"rondy\";\n     }\n"
+                },
+                {
+                    "date": 1692759031564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     {\n         // Inject dependencies if needed\n     }\n \n-    public function doSomething($count, $singular)\n+    public function doSomething(int $count, $singular)\n     {\n         // ...\n         return \"rondy\";\n     }\n"
+                },
+                {
+                    "date": 1692759040950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     {\n         // Inject dependencies if needed\n     }\n \n-    public function doSomething(int $count, $singular)\n+    public function doSomething(int $count, string $singular)\n     {\n         // ...\n         return \"rondy\";\n     }\n"
+                },
+                {
+                    "date": 1692759050182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     {\n         // Inject dependencies if needed\n     }\n \n-    public function doSomething(int $count, string $singular)\n+    public function doSomething(int $count, string $singular,string $p)\n     {\n         // ...\n         return \"rondy\";\n     }\n"
+                },
+                {
+                    "date": 1692759057401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     {\n         // Inject dependencies if needed\n     }\n \n-    public function doSomething(int $count, string $singular,string $p)\n+    public function doSomething(int $count, string $singular,string $plural )\n     {\n         // ...\n         return \"rondy\";\n     }\n"
+                },
+                {
+                    "date": 1692759064814,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     {\n         // Inject dependencies if needed\n     }\n \n-    public function doSomething(int $count, string $singular,string $plural )\n+    public function doSomething(int $count, string $singular,string $plural ):sting\n     {\n         // ...\n         return \"rondy\";\n     }\n"
+                },
+                {
+                    "date": 1692759087213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n     }\n \n     public function doSomething(int $count, string $singular,string $plural ):sting\n     {\n+        $resu\n         // ...\n         return \"rondy\";\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692759095199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     }\n \n     public function doSomething(int $count, string $singular,string $plural ):sting\n     {\n-        $resu\n+        $s\n         // ...\n         return \"rondy\";\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692759104179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     }\n \n     public function doSomething(int $count, string $singular,string $plural ):sting\n     {\n-        $s\n+        $str = $count===\n         // ...\n         return \"rondy\";\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692759110793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     }\n \n     public function doSomething(int $count, string $singular,string $plural ):sting\n     {\n-        $str = $count===\n+        $str = $count=== 1 ? $\n         // ...\n         return \"rondy\";\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692759117361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     }\n \n     public function doSomething(int $count, string $singular,string $plural ):sting\n     {\n-        $str = $count=== 1 ? $\n+        $str = $count=== 1 ? $singular : $plural;\n         // ...\n         return \"rondy\";\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692759173430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,7 +14,7 @@\n     public function doSomething(int $count, string $singular,string $plural ):sting\n     {\n         $str = $count=== 1 ? $singular : $plural;\n         // ...\n-        return \"rondy\";\n+        return \"\";\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692759187130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,7 +14,7 @@\n     public function doSomething(int $count, string $singular,string $plural ):sting\n     {\n         $str = $count=== 1 ? $singular : $plural;\n         // ...\n-        return \"\";\n+        return \"$count $\";\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692759218825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,11 +10,11 @@\n     {\n         // Inject dependencies if needed\n     }\n \n-    public function doSomething(int $count, string $singular,string $plural ):sting\n+    public function doSomething(int $count, string $singular, string $plural): sting\n     {\n-        $str = $count=== 1 ? $singular : $plural;\n+        $str = $count === 1 ? $singular : $plural;\n         // ...\n-        return \"$count $\";\n+        return \"{$count $str\";\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692759224552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,7 +14,7 @@\n     public function doSomething(int $count, string $singular, string $plural): sting\n     {\n         $str = $count === 1 ? $singular : $plural;\n         // ...\n-        return \"{$count $str\";\n+        return \"{$count $str.}\";\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692759253529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,7 +14,7 @@\n     public function doSomething(int $count, string $singular, string $plural): sting\n     {\n         $str = $count === 1 ? $singular : $plural;\n         // ...\n-        return \"{$count $str.}\";\n+        return \"{$count $str}\";\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692759259251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,7 +14,7 @@\n     public function doSomething(int $count, string $singular, string $plural): sting\n     {\n         $str = $count === 1 ? $singular : $plural;\n         // ...\n-        return \"{$count $str}\";\n+        return \"{$count $str.to}\";\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692759265441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,7 +14,7 @@\n     public function doSomething(int $count, string $singular, string $plural): sting\n     {\n         $str = $count === 1 ? $singular : $plural;\n         // ...\n-        return \"{$c}\";\n+        return \"{$count}\";\n     }\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1692758781084,
+            "name": "Commit-0",
+            "content": "<?php\n\nnamespace App\\Twig\\Runtime;\n\nuse Twig\\Extension\\RuntimeExtensionInterface;\n\nclass AppExtensionRuntime implements RuntimeExtensionInterface\n{\n    public function __construct()\n    {\n        // Inject dependencies if needed\n    }\n\n    public function doSomething($value)\n    {\n        retun \n    }\n}\n"
+        }
+    ]
+}

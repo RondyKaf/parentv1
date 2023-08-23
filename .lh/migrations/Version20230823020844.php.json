@@ -1,0 +1,26 @@
+{
+    "sourceFile": "migrations/Version20230823020844.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1692756540237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692756632067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n final class Version20230823020844 extends AbstractMigration\n {\n     public function getDescription(): string\n     {\n-        return 'Create table pins';\n+        return 'Create pins';\n     }\n \n     public function up(Schema $schema): void\n     {\n"
+                },
+                {
+                    "date": 1692756637198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n final class Version20230823020844 extends AbstractMigration\n {\n     public function getDescription(): string\n     {\n-        return 'Create pins';\n+        return 'Create pins tables';\n     }\n \n     public function up(Schema $schema): void\n     {\n"
+                }
+            ],
+            "date": 1692756540237,
+            "name": "Commit-0",
+            "content": "<?php\n\ndeclare(strict_types=1);\n\nnamespace DoctrineMigrations;\n\nuse Doctrine\\DBAL\\Schema\\Schema;\nuse Doctrine\\Migrations\\AbstractMigration;\n\n/**\n * Auto-generated Migration: Please modify to your needs!\n */\nfinal class Version20230823020844 extends AbstractMigration\n{\n    public function getDescription(): string\n    {\n        return 'Create table pins';\n    }\n\n    public function up(Schema $schema): void\n    {\n        // this up() migration is auto-generated, please modify it to your needs\n        $this->addSql('CREATE TABLE pins (id INT AUTO_INCREMENT NOT NULL, title VARCHAR(255) NOT NULL, description LONGTEXT NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB');\n        $this->addSql('CREATE TABLE messenger_messages (id BIGINT AUTO_INCREMENT NOT NULL, body LONGTEXT NOT NULL, headers LONGTEXT NOT NULL, queue_name VARCHAR(190) NOT NULL, created_at DATETIME NOT NULL, available_at DATETIME NOT NULL, delivered_at DATETIME DEFAULT NULL, INDEX IDX_75EA56E0FB7336F0 (queue_name), INDEX IDX_75EA56E0E3BD61CE (available_at), INDEX IDX_75EA56E016BA31DB (delivered_at), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB');\n    }\n\n    public function down(Schema $schema): void\n    {\n        // this down() migration is auto-generated, please modify it to your needs\n        $this->addSql('DROP TABLE pins');\n        $this->addSql('DROP TABLE messenger_messages');\n    }\n}\n"
+        }
+    ]
+}

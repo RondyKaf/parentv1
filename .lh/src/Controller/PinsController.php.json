@@ -1,0 +1,54 @@
+{
+    "sourceFile": "src/Controller/PinsController.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1692757728149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692757733464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,17 @@\n <?php\n \n namespace App\\Controller;\n \n+use App\\Repository\\PinsRepository;\n use Symfony\\Bundle\\FrameworkBundle\\Controller\\AbstractController;\n use Symfony\\Component\\HttpFoundation\\Response;\n use Symfony\\Component\\Routing\\Annotation\\Route;\n \n class PinsController extends AbstractController\n {\n     #[Route('/pins', name: 'app_pins')]\n-    public function index(PinRe): Response\n+    public function index(PinsRepository $pinsRepository): Response\n     {\n         return $this->render('pins/index.html.twig', [\n             'controller_name' => 'PinsController',\n         ]);\n"
+                },
+                {
+                    "date": 1692757775684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n {\n     #[Route('/pins', name: 'app_pins')]\n     public function index(PinsRepository $pinsRepository): Response\n     {\n+        dd\n         return $this->render('pins/index.html.twig', [\n             'controller_name' => 'PinsController',\n         ]);\n     }\n"
+                },
+                {
+                    "date": 1692757784327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n {\n     #[Route('/pins', name: 'app_pins')]\n     public function index(PinsRepository $pinsRepository): Response\n     {\n-        dd\n+        dd($pinsRepository->fin)\n         return $this->render('pins/index.html.twig', [\n             'controller_name' => 'PinsController',\n         ]);\n     }\n"
+                },
+                {
+                    "date": 1692757873901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n {\n     #[Route('/pins', name: 'app_pins')]\n     public function index(PinsRepository $pinsRepository): Response\n     {\n-        dd($pinsRepository->fin)\n+        dd($pinsRepository->findAll());\n         return $this->render('pins/index.html.twig', [\n-            'controller_name' => 'PinsController',\n+            'pins' => 'PinsController',\n         ]);\n     }\n-}\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692757879435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n     public function index(PinsRepository $pinsRepository): Response\n     {\n         dd($pinsRepository->findAll());\n         return $this->render('pins/index.html.twig', [\n-            'pins' => 'PinsController',\n+            'pins' => ,\n         ]);\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692757886661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n {\n     #[Route('/pins', name: 'app_pins')]\n     public function index(PinsRepository $pinsRepository): Response\n     {\n-        dd($pinsRepository->findAll());\n+    pins$pinsRepository->findAll());\n         return $this->render('pins/index.html.twig', [\n             'pins' => ,\n         ]);\n     }\n"
+                },
+                {
+                    "date": 1692757892582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n {\n     #[Route('/pins', name: 'app_pins')]\n     public function index(PinsRepository $pinsRepository): Response\n     {\n-    pins$pinsRepository->findAll());\n+    $pins =$pinsRepository->findAll());\n         return $this->render('pins/index.html.twig', [\n             'pins' => ,\n         ]);\n     }\n"
+                },
+                {
+                    "date": 1692757899318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n {\n     #[Route('/pins', name: 'app_pins')]\n     public function index(PinsRepository $pinsRepository): Response\n     {\n-    $pins =$pinsRepository->findAll());\n+        $pins = $pinsRepository->findAll();\n         return $this->render('pins/index.html.twig', [\n             'pins' => ,\n         ]);\n     }\n"
+                },
+                {
+                    "date": 1692757951059,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n     public function index(PinsRepository $pinsRepository): Response\n     {\n         $pins = $pinsRepository->findAll();\n         return $this->render('pins/index.html.twig', [\n-            'pins' => ,\n+            \"pins\" => $pins,\n         ]);\n     }\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1692757728149,
+            "name": "Commit-0",
+            "content": "<?php\n\nnamespace App\\Controller;\n\nuse Symfony\\Bundle\\FrameworkBundle\\Controller\\AbstractController;\nuse Symfony\\Component\\HttpFoundation\\Response;\nuse Symfony\\Component\\Routing\\Annotation\\Route;\n\nclass PinsController extends AbstractController\n{\n    #[Route('/pins', name: 'app_pins')]\n    public function index(PinRe): Response\n    {\n        return $this->render('pins/index.html.twig', [\n            'controller_name' => 'PinsController',\n        ]);\n    }\n}\n"
+        }
+    ]
+}

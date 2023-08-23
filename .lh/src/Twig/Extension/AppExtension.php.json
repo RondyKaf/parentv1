@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/Twig/Extension/AppExtension.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1692758711348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692758722485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-<?php\n+ <?php\n \n namespace App\\Twig\\Extension;\n \n use App\\Twig\\Runtime\\AppExtensionRuntime;\n@@ -21,8 +21,8 @@\n \n     public function getFunctions(): array\n     {\n         return [\n-            new TwigFunction('plu', [AppExtensionRuntime::class, 'doSomething']),\n+            new TwigFunction('pluralize', [AppExtensionRuntime::class, 'doSomething']),\n         ];\n     }\n }\n"
+                },
+                {
+                    "date": 1692758926146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n- <?php\n+<?php\n \n namespace App\\Twig\\Extension;\n \n use App\\Twig\\Runtime\\AppExtensionRuntime;\n@@ -21,8 +21,8 @@\n \n     public function getFunctions(): array\n     {\n         return [\n-            new TwigFunction('pluralize', [AppExtensionRuntime::class, 'doSomething']),\n+            new TwigFunction('plu', [AppExtensionRuntime::class, 'doSomething']),\n         ];\n     }\n }\n"
+                },
+                {
+                    "date": 1692758931281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,8 @@\n \n     public function getFunctions(): array\n     {\n         return [\n-            new TwigFunction('plu', [AppExtensionRuntime::class, 'doSomething']),\n+            new TwigFunction('pluralize', [AppExtensionRuntime::class, 'doSomething']),\n         ];\n     }\n }\n"
+                }
+            ],
+            "date": 1692758711348,
+            "name": "Commit-0",
+            "content": "<?php\n\nnamespace App\\Twig\\Extension;\n\nuse App\\Twig\\Runtime\\AppExtensionRuntime;\nuse Twig\\Extension\\AbstractExtension;\nuse Twig\\TwigFilter;\nuse Twig\\TwigFunction;\n\nclass AppExtension extends AbstractExtension\n{\n    public function getFilters(): array\n    {\n        return [\n            // If your filter generates SAFE HTML, you should add a third\n            // parameter: ['is_safe' => ['html']]\n            // Reference: https://twig.symfony.com/doc/3.x/advanced.html#automatic-escaping\n            new TwigFilter('filter_name', [AppExtensionRuntime::class, 'doSomething']),\n        ];\n    }\n\n    public function getFunctions(): array\n    {\n        return [\n            new TwigFunction('plu', [AppExtensionRuntime::class, 'doSomething']),\n        ];\n    }\n}\n"
+        }
+    ]
+}

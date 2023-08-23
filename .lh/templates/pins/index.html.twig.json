@@ -1,0 +1,190 @@
+{
+    "sourceFile": "templates/pins/index.html.twig",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 43,
+            "patches": [
+                {
+                    "date": 1692755806254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692755828482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title %}\n+{% block find all pins%}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n"
+                },
+                {
+                    "date": 1692755836432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block find all pins%}\n+{% block find all pant%}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n"
+                },
+                {
+                    "date": 1692755848348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,20 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block find all pant%}\n+{% block find all panterest%}\n \n {% block body %}\n-<style>\n-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n-</style>\n-\n-<div class=\"example-wrapper\">\n-    <h1>Hello {{ controller_name }}! ✅</h1>\n-\n-    This friendly message is coming from:\n-    <ul>\n-        <li>Your controller at <code><a href=\"{{ '/Users/rondy/Sites/panterestv1/src/Controller/PinsController.php'|file_link(0) }}\">src/Controller/PinsController.php</a></code></li>\n-        <li>Your template at <code><a href=\"{{ '/Users/rondy/Sites/panterestv1/templates/pins/index.html.twig'|file_link(0) }}\">templates/pins/index.html.twig</a></code></li>\n-    </ul>\n-</div>\n+    \n {% endblock %}\n"
+                },
+                {
+                    "date": 1692755857082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n \n {% block find all panterest%}\n \n {% block body %}\n-    \n+    <h1>All pins</h1>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692755872753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block find all panterest%}\n+{% block \"find all panterest%}\n \n {% block body %}\n     <h1>All pins</h1>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692755890849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block \"find all panterest%}\n+{% block find all panterest%}\n \n {% block body %}\n     <h1>All pins</h1>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692755900024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,20 @@\n {% extends 'base.html.twig' %}\n \n-{% block find all panterest%}\n+{% block title %}Hello PinsController!{% endblock %}\n \n {% block body %}\n-    <h1>All pins</h1>\n+<style>\n+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n+</style>\n+\n+<div class=\"example-wrapper\">\n+    <h1>Hello {{ controller_name }}! ✅</h1>\n+\n+    This friendly message is coming from:\n+    <ul>\n+        <li>Your controller at <code><a href=\"{{ '/Users/rondy/Sites/panterestv1/src/Controller/PinsController.php'|file_link(0) }}\">src/Controller/PinsController.php</a></code></li>\n+        <li>Your template at <code><a href=\"{{ '/Users/rondy/Sites/panterestv1/templates/pins/index.html.twig'|file_link(0) }}\">templates/pins/index.html.twig</a></code></li>\n+    </ul>\n+</div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692755916217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title %}Hello PinsController!{% endblock %}\n+{% block title %}Pa{% endblock %}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n"
+                },
+                {
+                    "date": 1692755923194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title %}Pa{% endblock %}\n+{% block title %}Panr{% endblock %}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n"
+                },
+                {
+                    "date": 1692755929729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title %}Panr{% endblock %}\n+{% block title %}Pantere{% endblock %}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n"
+                },
+                {
+                    "date": 1692755936249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title %}Pantere{% endblock %}\n+{% block title %}Panterest{% endblock %}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n"
+                },
+                {
+                    "date": 1692757918270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,13 +8,7 @@\n     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n </style>\n \n <div class=\"example-wrapper\">\n-    <h1>Hello {{ controller_name }}! ✅</h1>\n-\n-    This friendly message is coming from:\n-    <ul>\n-        <li>Your controller at <code><a href=\"{{ '/Users/rondy/Sites/panterestv1/src/Controller/PinsController.php'|file_link(0) }}\">src/Controller/PinsController.php</a></code></li>\n-        <li>Your template at <code><a href=\"{{ '/Users/rondy/Sites/panterestv1/templates/pins/index.html.twig'|file_link(0) }}\">templates/pins/index.html.twig</a></code></li>\n-    </ul>\n+   \n </div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692757923855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n </style>\n \n <div class=\"example-wrapper\">\n-   \n+   {{ pins}}\n </div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692758036601,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,8 @@\n </style>\n \n <div class=\"example-wrapper\">\n    {{ pins}}\n+\n+   \n </div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692758042568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,7 +10,9 @@\n \n <div class=\"example-wrapper\">\n    {{ pins}}\n \n-   \n+   {% for  in items %}\n+    \n+   {% endfor %}\n </div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692758048657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \n <div class=\"example-wrapper\">\n    {{ pins}}\n \n-   {% for  in items %}\n+   {% for pin in pins %}\n     \n    {% endfor %}\n </div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692758053906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,11 @@\n     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n </style>\n \n <div class=\"example-wrapper\">\n-   {{ pins}}\n+   \n \n    {% for pin in pins %}\n-    \n+        {{ pins}}\n    {% endfor %}\n </div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692758109827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n <div class=\"example-wrapper\">\n    \n \n    {% for pin in pins %}\n-        {{ pins}}\n+        {{ pin. }}\n    {% endfor %}\n </div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692758115997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n <div class=\"example-wrapper\">\n    \n \n    {% for pin in pins %}\n-        {{ pin. }}\n+        {{ pin.|title }} }}\n    {% endfor %}\n </div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692758121570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n <div class=\"example-wrapper\">\n    \n \n    {% for pin in pins %}\n-        {{ pin.|title }} }}\n+        {{ pin.title }}\n    {% endfor %}\n </div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692758128232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,8 @@\n    \n \n    {% for pin in pins %}\n         {{ pin.title }}\n+        {{ pin.title }}\n    {% endfor %}\n </div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692758152240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,8 @@\n <div class=\"example-wrapper\">\n    \n \n    {% for pin in pins %}\n-        {{ pin.title }}\n-        {{ pin.title }}\n+        \n    {% endfor %}\n </div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692758160496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n <div class=\"example-wrapper\">\n    \n \n    {% for pin in pins %}\n-        \n+        <article>\n+        </article>\n    {% endfor %}\n </div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692758169019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n    \n \n    {% for pin in pins %}\n         <article>\n+            h1\n         </article>\n    {% endfor %}\n </div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692758175416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n    \n \n    {% for pin in pins %}\n         <article>\n-            h1\n+            <h1>{{</h1>\n         </article>\n    {% endfor %}\n </div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692758182954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n    \n \n    {% for pin in pins %}\n         <article>\n-            <h1>{{</h1>\n+            <h1>{{ pin.}}</h1>\n         </article>\n    {% endfor %}\n </div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692758190054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n    \n \n    {% for pin in pins %}\n         <article>\n-            <h1>{{ pin.}}</h1>\n+            <h1>{{ pin.ti}}</h1>\n         </article>\n    {% endfor %}\n </div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692758195926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,10 @@\n    \n \n    {% for pin in pins %}\n         <article>\n-            <h1>{{ pin.ti}}</h1>\n+            <h1>{{ pin.title}}</h1>\n+            p\n         </article>\n    {% endfor %}\n </div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692758210658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \n    {% for pin in pins %}\n         <article>\n             <h1>{{ pin.title}}</h1>\n-            p\n+            <p>{{</p>\n         </article>\n    {% endfor %}\n </div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692758219707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \n    {% for pin in pins %}\n         <article>\n             <h1>{{ pin.title}}</h1>\n-            <p>{{</p>\n+            <p>{{ pin.descvription }}</p>\n         </article>\n    {% endfor %}\n </div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692758230533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \n    {% for pin in pins %}\n         <article>\n             <h1>{{ pin.title}}</h1>\n-            <p>{{ pin.descvription }}</p>\n+            <p>{{ pin.description }}</p>\n         </article>\n    {% endfor %}\n </div>\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692758291968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n </style>\n \n <div class=\"example-wrapper\">\n    \n+   <h1></h1>\n \n    {% for pin in pins %}\n         <article>\n             <h1>{{ pin.title}}</h1>\n"
+                },
+                {
+                    "date": 1692758334637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n    <h1></h1>\n \n    {% for pin in pins %}\n         <article>\n-            <h1>{{ pin.title}}</h1>\n+            <h2>{{ pin.title}}</h1>\n             <p>{{ pin.description }}</p>\n         </article>\n    {% endfor %}\n </div>\n"
+                },
+                {
+                    "date": 1692758352400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,13 +9,13 @@\n </style>\n \n <div class=\"example-wrapper\">\n    \n-   <h1></h1>\n+   <h1>{{</h1>\n \n    {% for pin in pins %}\n         <article>\n-            <h2>{{ pin.title}}</h1>\n+            <h2>{{ pin.title}}</h2>\n             <p>{{ pin.description }}</p>\n         </article>\n    {% endfor %}\n </div>\n"
+                },
+                {
+                    "date": 1692758364802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n </style>\n \n <div class=\"example-wrapper\">\n    \n-   <h1>{{</h1>\n+   <h1>{{ plura }}</h1>\n \n    {% for pin in pins %}\n         <article>\n             <h2>{{ pin.title}}</h2>\n"
+                },
+                {
+                    "date": 1692758373234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n </style>\n \n <div class=\"example-wrapper\">\n    \n-   <h1>{{ plura }}</h1>\n+   <h1>{{ pluralize() }}</h1>\n \n    {% for pin in pins %}\n         <article>\n             <h2>{{ pin.title}}</h2>\n"
+                },
+                {
+                    "date": 1692758380686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n </style>\n \n <div class=\"example-wrapper\">\n    \n-   <h1>{{ pluralize() }}</h1>\n+   <h1>{{ pluralize(pins) }}</h1>\n \n    {% for pin in pins %}\n         <article>\n             <h2>{{ pin.title}}</h2>\n"
+                },
+                {
+                    "date": 1692758387241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n </style>\n \n <div class=\"example-wrapper\">\n    \n-   <h1>{{ pluralize(pins) }}</h1>\n+   <h1>{{ pluralize(pins|) }}</h1>\n \n    {% for pin in pins %}\n         <article>\n             <h2>{{ pin.title}}</h2>\n"
+                },
+                {
+                    "date": 1692758396517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n </style>\n \n <div class=\"example-wrapper\">\n    \n-   <h1>{{ pluralize(pins|) }}</h1>\n+   <h1>{{ pluralize(pins|{{ variable|length }}) }}</h1>\n \n    {% for pin in pins %}\n         <article>\n             <h2>{{ pin.title}}</h2>\n"
+                },
+                {
+                    "date": 1692758403906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n </style>\n \n <div class=\"example-wrapper\">\n    \n-   <h1>{{ pluralize(pins|{{ variable|length }}) }}</h1>\n+   <h1>{{ pluralize(pins|length ,) }}</h1>\n \n    {% for pin in pins %}\n         <article>\n             <h2>{{ pin.title}}</h2>\n"
+                },
+                {
+                    "date": 1692758411397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n </style>\n \n <div class=\"example-wrapper\">\n    \n-   <h1>{{ pluralize(pins|length ,) }}</h1>\n+   <h1>{{ pluralize(pins|length, ) }}</h1>\n \n    {% for pin in pins %}\n         <article>\n             <h2>{{ pin.title}}</h2>\n"
+                },
+                {
+                    "date": 1692758417269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n </style>\n \n <div class=\"example-wrapper\">\n    \n-   <h1>{{ pluralize(pins|length, ) }}</h1>\n+   <h1>{{ pluralize(pins|length, \") }}</h1>\n \n    {% for pin in pins %}\n         <article>\n             <h2>{{ pin.title}}</h2>\n"
+                },
+                {
+                    "date": 1692758428145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n </style>\n \n <div class=\"example-wrapper\">\n    \n-   <h1>{{ pluralize(pins|length, \") }}</h1>\n+   <h1>{{ pluralize(pins|length, \"Pin\", \"Pins\") }}</h1>\n \n    {% for pin in pins %}\n         <article>\n             <h2>{{ pin.title}}</h2>\n"
+                }
+            ],
+            "date": 1692755806254,
+            "name": "Commit-0",
+            "content": "{% extends 'base.html.twig' %}\n\n{% block title %}\n\n{% block body %}\n<style>\n    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n</style>\n\n<div class=\"example-wrapper\">\n    <h1>Hello {{ controller_name }}! ✅</h1>\n\n    This friendly message is coming from:\n    <ul>\n        <li>Your controller at <code><a href=\"{{ '/Users/rondy/Sites/panterestv1/src/Controller/PinsController.php'|file_link(0) }}\">src/Controller/PinsController.php</a></code></li>\n        <li>Your template at <code><a href=\"{{ '/Users/rondy/Sites/panterestv1/templates/pins/index.html.twig'|file_link(0) }}\">templates/pins/index.html.twig</a></code></li>\n    </ul>\n</div>\n{% endblock %}\n"
+        }
+    ]
+}
