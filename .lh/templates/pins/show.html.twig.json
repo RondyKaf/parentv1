@@ -1,0 +1,110 @@
+{
+    "sourceFile": "templates/pins/show.html.twig",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 23,
+            "patches": [
+                {
+                    "date": 1692760904147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692760915372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n-ac\n\\ No newline at end of file\n+<article>\n+</article>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692760921385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,3 @@\n <article>\n+    <h2></h2>\n </article>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692760929403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n <article>\n-    <h2></h2>\n+    <h2>{{ pin.title</h2>\n </article>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692760934611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n <article>\n-    <h2>{{ pin.title</h2>\n+    <h2>{{ pin.title }}</h2>\n+    p\n </article>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692760946482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n <article>\n     <h2>{{ pin.title }}</h2>\n-    p\n+    <p>{{ pin.description </p>\n </article>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692761031653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,25 @@\n <article>\n     <h2>{{ pin.title }}</h2>\n-    <p>{{ pin.description </p>\n-</article>\n\\ No newline at end of file\n+    <p>{{ pin.description }}</p>\n+</article>\n+\n+{% block title %}Panterest{% endblock %}\n+\n+{% block body %}\n+<style>\n+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n+</style>\n+\n+<div class=\"example-wrapper\">\n+   \n+   <h1>{{ pluralize(pins|length, \"Pin\", \"Pins\") }}</h1>\n+\n+   {% for pin in pins %}\n+        <article>\n+            <h2><a href=\"{{ path('app_pins_show',{id:pin.id}) }}\">{{ pin.title}}</a></h2>\n+            <p>{{ pin.description }}</p>\n+        </article>\n+   {% endfor %}\n+</div>\n+{% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692761041537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,25 +1,7 @@\n-<article>\n-    <h2>{{ pin.title }}</h2>\n-    <p>{{ pin.description }}</p>\n-</article>\n \n+\n {% block title %}Panterest{% endblock %}\n \n {% block body %}\n-<style>\n-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n-</style>\n-\n-<div class=\"example-wrapper\">\n-   \n-   <h1>{{ pluralize(pins|length, \"Pin\", \"Pins\") }}</h1>\n-\n-   {% for pin in pins %}\n-        <article>\n-            <h2><a href=\"{{ path('app_pins_show',{id:pin.id}) }}\">{{ pin.title}}</a></h2>\n-            <p>{{ pin.description }}</p>\n-        </article>\n-   {% endfor %}\n-</div>\n+    \n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692761047529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,9 @@\n \n {% block title %}Panterest{% endblock %}\n \n {% block body %}\n-    \n+    <article>\n+    <h2>{{ pin.title }}</h2>\n+    <p>{{ pin.description }}</p>\n+    </article>\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692761097816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,13 @@\n {% block title %}Panterest{% endblock %}\n \n {% block body %}\n     <article>\n-    <h2>{{ pin.title }}</h2>\n-    <p>{{ pin.description }}</p>\n+        <h2>{{ pin.title }}</h2>\n+        <p>{{ pin.description }}</p>\n\\ No newline at end of file\n     </article>\n-{% endblock %}\n+{% endblock %}\n+\n+<style>\n+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n+</style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692761109414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,14 +2,14 @@\n \n {% block title %}Panterest{% endblock %}\n \n {% block body %}\n+    <style>\n+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n+</style>\n     <article>\n         <h2>{{ pin.title }}</h2>\n         <p>{{ pin.description }}</p>\n     </article>\n {% endblock %}\n \n\\ No newline at end of file\n-<style>\n-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n-</style>\n"
+                },
+                {
+                    "date": 1692761115236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,12 +3,13 @@\n {% block title %}Panterest{% endblock %}\n \n {% block body %}\n     <style>\n-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n+        .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n-</style>\n+    </style>\n     <article>\n         <h2>{{ pin.title }}</h2>\n         <p>{{ pin.description }}</p>\n     </article>\n {% endblock %}\n+\n"
+                },
+                {
+                    "date": 1692761280905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,22 @@\n+{% extends 'base.html.twig' %}\n \n-\n {% block title %}Panterest{% endblock %}\n \n {% block body %}\n-    <style>\n-        .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n+<style>\n+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n-    </style>\n-    <article>\n-        <h2>{{ pin.title }}</h2>\n-        <p>{{ pin.description }}</p>\n-    </article>\n-{% endblock %}\n+</style>\n \n+<div class=\"example-wrapper\">\n+   \n+   <h1>{{ pluralize(pins|length, \"Pin\", \"Pins\") }}</h1>\n+\n+   {% for pin in pins %}\n+        <article>\n+            <h2><a href=\"{{ path('app_pins_show',{id:pin.id}) }}\">{{ pin.title}}</a></h2>\n+            <p>{{ pin.description }}</p>\n+        </article>\n+   {% endfor %}\n+</div>\n+{% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692761288896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,16 +7,6 @@\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n </style>\n \n-<div class=\"example-wrapper\">\n-   \n-   <h1>{{ pluralize(pins|length, \"Pin\", \"Pins\") }}</h1>\n-\n-   {% for pin in pins %}\n-        <article>\n-            <h2><a href=\"{{ path('app_pins_show',{id:pin.id}) }}\">{{ pin.title}}</a></h2>\n-            <p>{{ pin.description }}</p>\n-        </article>\n-   {% endfor %}\n-</div>\n+    \n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692761294585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,8 @@\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n </style>\n \n+    <article>\n     \n+    </article>\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692761300780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n </style>\n \n     <article>\n-    \n+        <h2>{{ </h2>\n     </article>\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692761306967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n </style>\n \n     <article>\n-        <h2>{{ </h2>\n+        <h2>{{ pin.title }}</h2>\n     </article>\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692761312728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,7 @@\n </style>\n \n     <article>\n         <h2>{{ pin.title }}</h2>\n+        <p></p>\n     </article>\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692761324803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,7 @@\n </style>\n \n     <article>\n         <h2>{{ pin.title }}</h2>\n-        <p></p>\n+        <p>{{ pin.description</p>\n     </article>\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692761369412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title %}Panterest{% endblock %}\n+{% block title %}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n@@ -9,7 +9,7 @@\n </style>\n \n     <article>\n         <h2>{{ pin.title }}</h2>\n-        <p>{{ pin.description</p>\n+        <p>{{ pin.description }} </p>\n     </article>\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692761408784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title %}\n+{% block title %}Panterest{% endblock %}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n@@ -9,7 +9,7 @@\n </style>\n \n     <article>\n         <h2>{{ pin.title }}</h2>\n-        <p>{{ pin.description }} </p>\n+        <p>{{ pin.description }}</p>\n     </article>\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692761414914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n {% extends 'base.html.twig' %}\n \n {% block title %}Panterest{% endblock %}\n-\n-{% block body %}\n-<style>\n+    <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n </style>\n \n     <article>\n         <h2>{{ pin.title }}</h2>\n         <p>{{ pin.description }}</p>\n     </article>\n+{% block body %}\n+\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692761423401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n {% extends 'base.html.twig' %}\n \n {% block title %}Panterest{% endblock %}\n     <style>\n-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n-</style>\n+        .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n+        .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n+    </style>\n \n     <article>\n         <h2>{{ pin.title }}</h2>\n         <p>{{ pin.description }}</p>\n"
+                },
+                {
+                    "date": 1692761430167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title %}P\n+{% block title %}\n     <style>\n         .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n         .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n     </style>\n"
+                }
+            ],
+            "date": 1692760904147,
+            "name": "Commit-0",
+            "content": "ac"
+        }
+    ]
+}

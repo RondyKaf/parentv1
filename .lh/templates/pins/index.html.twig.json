@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 43,
+            "activePatchIndex": 45,
             "patches": [
                 {
                     "date": 1692755806254,
@@ -180,6 +180,14 @@
                 {
                     "date": 1692758428145,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n </style>\n \n <div class=\"example-wrapper\">\n    \n-   <h1>{{ pluralize(pins|length, \") }}</h1>\n+   <h1>{{ pluralize(pins|length, \"Pin\", \"Pins\") }}</h1>\n \n    {% for pin in pins %}\n         <article>\n             <h2>{{ pin.title}}</h2>\n"
+                },
+                {
+                    "date": 1692760267971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n    <h1>{{ pluralize(pins|length, \"Pin\", \"Pins\") }}</h1>\n \n    {% for pin in pins %}\n         <article>\n-            <h2>{{ pin.title}}</h2>\n+            <h2>a{{ pin.title}}</h2>\n             <p>{{ pin.description }}</p>\n         </article>\n    {% endfor %}\n </div>\n"
+                },
+                {
+                    "date": 1692760273377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n    <h1>{{ pluralize(pins|length, \"Pin\", \"Pins\") }}</h1>\n \n    {% for pin in pins %}\n         <article>\n-            <h2><a href=\"{{ p}}\"></a>{{ pin.title}}</h2>\n+            <h2><a href=\"{{ pa}}\"></a>{{ pin.title}}</h2>\n             <p>{{ pin.description }}</p>\n         </article>\n    {% endfor %}\n </div>\n"
                 }
             ],
             "date": 1692755806254,

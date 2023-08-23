@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 9,
+            "activePatchIndex": 25,
             "patches": [
                 {
                     "date": 1692757728149,
@@ -44,6 +44,70 @@
                 {
                     "date": 1692757951059,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n     public function index(PinsRepository $pinsRepository): Response\n     {\n         $pins = $pinsRepository->findAll();\n         return $this->render('pins/index.html.twig', [\n-            'pins' => ,\n+            \"pins\" => $pins,\n         ]);\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692759493660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n use Symfony\\Component\\Routing\\Annotation\\Route;\n \n class PinsController extends AbstractController\n {\n-    #[Route('/pins', name: 'app_pins')]\n+    #[Route('/pins', name: 'app_home')]\n     public function index(PinsRepository $pinsRepository): Response\n     {\n         $pins = $pinsRepository->findAll();\n         return $this->render('pins/index.html.twig', [\n"
+                },
+                {
+                    "date": 1692759499182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n use Symfony\\Component\\Routing\\Annotation\\Route;\n \n class PinsController extends AbstractController\n {\n-    #[Route('/pins', name: 'app_home')]\n+    #[Route('/pins', name: 'app_home', medthos)]\n     public function index(PinsRepository $pinsRepository): Response\n     {\n         $pins = $pinsRepository->findAll();\n         return $this->render('pins/index.html.twig', [\n"
+                },
+                {
+                    "date": 1692759505889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n use Symfony\\Component\\Routing\\Annotation\\Route;\n \n class PinsController extends AbstractController\n {\n-    #[Route('/pins', name: 'app_home', medthos)]\n+    #[Route('/pins', name: 'app_home',methods: )]\n     public function index(PinsRepository $pinsRepository): Response\n     {\n         $pins = $pinsRepository->findAll();\n         return $this->render('pins/index.html.twig', [\n"
+                },
+                {
+                    "date": 1692759671961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,13 +8,22 @@\n use Symfony\\Component\\Routing\\Annotation\\Route;\n \n class PinsController extends AbstractController\n {\n-    #[Route('/pins', name: 'app_home',methods: )]\n+    #[Route('/pins', name: 'app_home', methods: [\"GET\"])]\n     public function index(PinsRepository $pinsRepository): Response\n     {\n         $pins = $pinsRepository->findAll();\n         return $this->render('pins/index.html.twig', [\n             \"pins\" => $pins,\n         ]);\n     }\n+\n+    #[Route('/pins', name: 'app_home', methods: [\"GET\"])]\n+    public function index(PinsRepository $pinsRepository): Response\n+    {\n+        $pins = $pinsRepository->findAll();\n+        return $this->render('pins/index.html.twig', [\n+            \"pins\" => $pins,\n+        ]);\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692759677401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         ]);\n     }\n \n     #[Route('/pins', name: 'app_home', methods: [\"GET\"])]\n-    public function index(PinsRepository $pinsRepository): Response\n+    public function show(PinsRepository $pinsRepository): Response\n     {\n         $pins = $pinsRepository->findAll();\n         return $this->render('pins/index.html.twig', [\n             \"pins\" => $pins,\n"
+                },
+                {
+                    "date": 1692759686192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         ]);\n     }\n \n     #[Route('/pins', name: 'app_home', methods: [\"GET\"])]\n-    public function show(PinsRepository $pinsRepository): Response\n+    public function show(Pin $pin): Response\n     {\n         $pins = $pinsRepository->findAll();\n         return $this->render('pins/index.html.twig', [\n             \"pins\" => $pins,\n"
+                },
+                {
+                    "date": 1692759691360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,13 +17,10 @@\n             \"pins\" => $pins,\n         ]);\n     }\n \n-    #[Route('/pins', name: 'app_home', methods: [\"GET\"])]\n+    #[Route('/pins/', name: 'app_home', methods: [\"GET\"])]\n     public function show(Pin $pin): Response\n     {\n-        $pins = $pinsRepository->findAll();\n-        return $this->render('pins/index.html.twig', [\n-            \"pins\" => $pins,\n-        ]);\n+       \n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692759700404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n             \"pins\" => $pins,\n         ]);\n     }\n \n-    #[Route('/pins/', name: 'app_home', methods: [\"GET\"])]\n+    #[Route('/pins/{id', name: 'app_home', methods: [\"GET\"])]\n     public function show(Pin $pin): Response\n     {\n        \n     }\n"
+                },
+                {
+                    "date": 1692759709678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n             \"pins\" => $pins,\n         ]);\n     }\n \n-    #[Route('/pins/{id', name: 'app_home', methods: [\"GET\"])]\n+    #[Route('/pins/{id<0-9', name: 'app_home', methods: [\"GET\"])]\n     public function show(Pin $pin): Response\n     {\n        \n     }\n"
+                },
+                {
+                    "date": 1692759715245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n             \"pins\" => $pins,\n         ]);\n     }\n \n-    #[Route('/pins/{id<0-9', name: 'app_home', methods: [\"GET\"])]\n+    #[Route('/pins/{id<0-9>+>', name: 'app_home', methods: [\"GET\"])]\n     public function show(Pin $pin): Response\n     {\n        \n     }\n"
+                },
+                {
+                    "date": 1692759726465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n             \"pins\" => $pins,\n         ]);\n     }\n \n-    #[Route('/pins/{id<0-9>+>', name: 'app_home', methods: [\"GET\"])]\n+    #[Route('/pins/{id<0-9+>}', name: 'app_home', methods: [\"GET\"])]\n     public function show(Pin $pin): Response\n     {\n        \n     }\n"
+                },
+                {
+                    "date": 1692759742369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n             \"pins\" => $pins,\n         ]);\n     }\n \n-    #[Route('/pins/{id<0-9+>}', name: 'app_home', methods: [\"GET\"])]\n+    #[Route('/pins/{id<0-9+>}', name: 'app_pins_show', methods: [\"GET\"])]\n     public function show(Pin $pin): Response\n     {\n        \n     }\n"
+                },
+                {
+                    "date": 1692759755306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n             \"pins\" => $pins,\n         ]);\n     }\n \n-    #[Route('/pins/{id<0-9+>}', name: 'app_pins_show', methods: [\"GET\"])]\n+    #[Route('/pins/{id<0-9+>}\", name: 'app_pins_show', methods: [\"GET\"])]\n     public function show(Pin $pin): Response\n     {\n        \n     }\n"
+                },
+                {
+                    "date": 1692759762213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n             \"pins\" => $pins,\n         ]);\n     }\n \n-    #[Route('/pins/{id<0-9+>}\", name: 'app_pins_show', methods: [\"GET\"])]\n+    #[Route(\"/pins/{id<0-9+>}\", name: \"app_pins_show', methods: [\"GET\"])]\n     public function show(Pin $pin): Response\n     {\n        \n     }\n"
+                },
+                {
+                    "date": 1692759767390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n             \"pins\" => $pins,\n         ]);\n     }\n \n-    #[Route(\"/pins/{id<0-9+>}\", name: \"app_pins_show, methods: [\"GET\"])]\n+    #[Route(\"/pins/{id<0-9+>}\", name: \"app_pins_show\", methods: [\"GET\"])]\n     public function show(Pin $pin): Response\n     {\n        \n     }\n"
+                },
+                {
+                    "date": 1692759775899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,7 +20,7 @@\n \n     #[Route(\"/pins/{id<0-9+>}\", name: \"app_pins_show\", methods: [\"GET\"])]\n     public function show(Pin $pin): Response\n     {\n-        dd($pin)\n+        dd($pin);\n     }\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1692757728149,
