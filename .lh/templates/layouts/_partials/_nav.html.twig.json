@@ -1,0 +1,58 @@
+{
+    "sourceFile": "templates/layouts/_partials/_nav.html.twig",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1692875164197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692875172785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n <nav>\n-    {{ url(name, parameters = [], schemeRelative = false) }}\n+    <ul>\n+        li\n+    </ul>\n </nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692875186826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n <nav>\n     <ul>\n-        li\n+        <li>\n+            a\n+        </li>\n     </ul>\n </nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692875194305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <nav>\n     <ul>\n         <li>\n-            a\n+            <a href=\"{{Home}}\"></a>\n         </li>\n     </ul>\n </nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692875199961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <nav>\n     <ul>\n         <li>\n-            <a href=\"{{Home}}\"></a>\n+            <a href=\"{{Home}}\">Home</a>\n         </li>\n     </ul>\n </nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692875258027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <nav>\n     <ul>\n         <li>\n-            <a href=\"{{Home}}\">Home</a>\n+            <a href=\"{{}}\">Home</a>\n         </li>\n     </ul>\n </nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692875280657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <nav>\n     <ul>\n         <li>\n-            <a href=\"{{}}\">Home</a>\n+            <a href=\"{{ path('')}}\">Home</a>\n         </li>\n     </ul>\n </nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692875286508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n <nav>\n     <ul>\n         <li>\n-            <a href=\"{{ path('')}}\">Home</a>\n+            <a href=\"{{ path('app-home')}}\">Home</a>\n+            \n         </li>\n     </ul>\n </nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692875293356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <nav>\n     <ul>\n         <li>\n             <a href=\"{{ path('app-home')}}\">Home</a>\n-            \n+            <a href=\"{{ path}}\"></a>\n         </li>\n     </ul>\n </nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692875300022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <nav>\n     <ul>\n         <li>\n-            <a href=\"{{ path('app-home')}}\">Home</a>\n-            <a href=\"{{ path}}\"></a>\n+            <a href=\"{{ path('app-home') }}\">Home</a>\n+            <a href=\"{{ path('a')}}\"></a>\n         </li>\n     </ul>\n </nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692875306558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <nav>\n     <ul>\n         <li>\n             <a href=\"{{ path('app_home') }}\">Home</a>\n-            <a href=\"{{ path('app_')}}\"></a>\n+            <a href=\"{{ path('app_c')}}\"></a>\n         </li>\n     </ul>\n </nav>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1692875164197,
+            "name": "Commit-0",
+            "content": "<nav>\n    {{ url(name, parameters = [], schemeRelative = false) }}\n</nav>"
+        }
+    ]
+}

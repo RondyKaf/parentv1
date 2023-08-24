@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/Entity/Traits/Timestampables.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1692831363925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692831377045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,12 @@\n <?php\n \n namespace App\\Entity\\Traits;\n \n+use Doctrine\\ORM\\Mapping as ORM;\n \n \n+trai\n \n /**\n  * \n  */\n"
+                },
+                {
+                    "date": 1692831382596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n use Doctrine\\ORM\\Mapping as ORM;\n \n \n-trai\n+trait T\n \n /**\n  * \n  */\n"
+                },
+                {
+                    "date": 1692831388095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n \n use Doctrine\\ORM\\Mapping as ORM;\n \n \n-trait T\n \n+\n /**\n  * \n  */\n trait Timestampables\n"
+                },
+                {
+                    "date": 1692831393685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,8 @@\n use Doctrine\\ORM\\Mapping as ORM;\n \n \n \n-\n-/**\n- * \n- */\n trait Timestampables\n {\n     #[ORM\\Column(options: [\"default\" => \"CURRENT_TIMESTAMP\"])]\n     private ?\\DateTimeImmutable $createdAt = null;\n"
+                }
+            ],
+            "date": 1692831363925,
+            "name": "Commit-0",
+            "content": "<?php\n\nnamespace App\\Entity\\Traits;\n\n\n\n\n/**\n * \n */\ntrait Timestampables\n{\n    #[ORM\\Column(options: [\"default\" => \"CURRENT_TIMESTAMP\"])]\n    private ?\\DateTimeImmutable $createdAt = null;\n\n\n    #[ORM\\Column(options: [\"default\" => \"CURRENT_TIMESTAMP\"])]\n    private ?\\DateTimeImmutable $updatedAt = null;\n\n    public function getCreatedAt(): ?\\DateTimeImmutable\n    {\n        return $this->createdAt;\n    }\n\n    public function setCreatedAt(\\DateTimeImmutable $createdAt): static\n    {\n        $this->createdAt = $createdAt;\n\n        return $this;\n    }\n\n    public function getUpdatedAt(): ?\\DateTimeImmutable\n    {\n        return $this->updatedAt;\n    }\n\n    public function setUpdatedAt(\\DateTimeImmutable $updatedAt): static\n    {\n        $this->updatedAt = $updatedAt;\n\n        return $this;\n    }\n    #[ORM\\PrePersist]\n    #[ORM\\PreUpdate]\n    public function updateTimesstamps()\n    {\n        if ($this->getCreatedAt() == null) {\n            $this->setCreatedAt(new \\DateTimeImmutable);\n\n        }\n        $this->setUpdatedAt(new \\DateTimeImmutable);\n    }\n}"
+        }
+    ]
+}

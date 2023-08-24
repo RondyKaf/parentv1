@@ -1,0 +1,102 @@
+{
+    "sourceFile": "templates/pins/edit.html.twig",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 21,
+            "patches": [
+                {
+                    "date": 1692873251061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692873263222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,4 +19,5 @@\n         </article>\n    {% endfor %}\n </div>\n {% endblock %}\n+ \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692873632160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n </style>\n \n <div class=\"example-wrapper\">\n    \n-   <h1>{{ pluralize(pins|length, \"Pin\", \"Pins\") }}</h1>\n \n    {% for pin in pins %}\n         <article>\n             <h2><a href=\"{{ path('app_pins_show',{id:pin.id}) }}\">{{ pin.title}}</a></h2>\n"
+                },
+                {
+                    "date": 1692873641204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,13 +10,8 @@\n \n <div class=\"example-wrapper\">\n    \n \n-   {% for pin in pins %}\n-        <article>\n-            <h2><a href=\"{{ path('app_pins_show',{id:pin.id}) }}\">{{ pin.title}}</a></h2>\n-            <p>{{ pin.description }}</p>\n-        </article>\n-   {% endfor %}\n+   \n </div>\n {% endblock %}\n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692873648519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,8 @@\n     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n </style>\n \n <div class=\"example-wrapper\">\n-   \n-\n-   \n+    <h1></h1>\n </div>\n {% endblock %}\n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692873783664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,10 @@\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n </style>\n \n-<div class=\"example-wrapper\">\n-    <h1></h1>\n-</div>\n+{{ form_start(Form) }}\n+        {{ form_widget(Form) }}\n+        <input type=\"submit\" value=\"Create Pin\" formnovalidate>\n+    {{ form_end(Form) }}\n {% endblock %}\n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692873805264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,7 +10,7 @@\n \n {{ form_start(Form) }}\n         {{ form_widget(Form) }}\n         <input type=\"submit\" value=\"Create Pin\" formnovalidate>\n-    {{ form_end(Form) }}\n+    {{ form_end(form) }}\n {% endblock %}\n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692873831309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n </style>\n \n-{{ form_start(Form) }}\n+{{ {{ form_start(form) }}(Form) }}\n         {{ form_widget(Form) }}\n         <input type=\"submit\" value=\"Create Pin\" formnovalidate>\n     {{ form_end(form) }}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692873836377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n </style>\n \n-{{ {{ form_start(form) }}(Form) }}\n+{{ form_start(form) }}\n         {{ form_widget(Form) }}\n         <input type=\"submit\" value=\"Create Pin\" formnovalidate>\n     {{ form_end(form) }}\n {% endblock %}\n"
+                },
+                {
+                    "date": 1692873856421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n </style>\n \n-{{ form_start(form) }}\n-        {{ form_widget(Form) }}\n+    {{ form_start(form) }}\n+        {{ form_widget(form) }}\n         <input type=\"submit\" value=\"Create Pin\" formnovalidate>\n     {{ form_end(form) }}\n {% endblock %}\n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692874418180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title %}Panterest{% endblock %}\n+{% block title %}({% endblock %}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n"
+                },
+                {
+                    "date": 1692874453661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n </style>\n \n     {{ form_start(form) }}\n         {{ form_widget(form) }}\n-        <input type=\"submit\" value=\"Create Pin\" formnovalidate>\n+        <input type=\"submit\" value=\"Edit pin\" formnovalidate>\n     {{ form_end(form) }}\n {% endblock %}\n  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692874483783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title %}({% endblock %}\n+{% block title %}{% endblock %}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n"
+                },
+                {
+                    "date": 1692874490954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title %}{% endblock %}\n+{% block \"\" %}{% endblock %}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n"
+                },
+                {
+                    "date": 1692874497209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block \"\" %}{% endblock %}\n+{% block \"\"%}{% endblock %}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n"
+                },
+                {
+                    "date": 1692874515354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block \"\"%}{% endblock %}\n+{% block \"Edit Pin%}{% endblock %}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n"
+                },
+                {
+                    "date": 1692874528724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block \"Edit Pin%}{% endblock %}\n+{% block %}{% endblock %}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n"
+                },
+                {
+                    "date": 1692874536108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block %}{% endblock %}\n+{% block %}E{% endblock %}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n"
+                },
+                {
+                    "date": 1692874541355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block %}E{% endblock %}\n+{% block %}{% endblock %}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n"
+                },
+                {
+                    "date": 1692874554817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block %}{% endblock %}\n+{% block %}Edit Pin {{pin.id}}{% endblock %}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n"
+                },
+                {
+                    "date": 1692874569713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block %}Edit Pin {{pin.id}}{% endblock %}\n+{% block %}\"Edit Pin {{ pin.id }}{% endblock %}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n"
+                },
+                {
+                    "date": 1692874577769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block %}\"Edit Pin {{ pin.id }}{% endblock %}\n+{% block {{ variable|title }} %}\"Edit Pin\" {{ pin.id }}{% endblock %}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n"
+                }
+            ],
+            "date": 1692873251061,
+            "name": "Commit-0",
+            "content": "{% extends 'base.html.twig' %}\n\n{% block title %}Panterest{% endblock %}\n\n{% block body %}\n<style>\n    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n</style>\n\n<div class=\"example-wrapper\">\n   \n   <h1>{{ pluralize(pins|length, \"Pin\", \"Pins\") }}</h1>\n\n   {% for pin in pins %}\n        <article>\n            <h2><a href=\"{{ path('app_pins_show',{id:pin.id}) }}\">{{ pin.title}}</a></h2>\n            <p>{{ pin.description }}</p>\n        </article>\n   {% endfor %}\n</div>\n{% endblock %}\n"
+        }
+    ]
+}

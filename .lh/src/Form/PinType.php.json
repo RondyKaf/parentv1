@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/Form/PinType.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1692875068700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1692875068700,
+            "name": "Commit-0",
+            "content": "<?php\n\nnamespace App\\Form;\n\nuse App\\Entity\\Pins;\nuse Symfony\\Component\\Form\\AbstractType;\nuse Symfony\\Component\\Form\\FormBuilderInterface;\nuse Symfony\\Component\\OptionsResolver\\OptionsResolver;\n\nclass PinType extends AbstractType\n{\n    public function buildForm(FormBuilderInterface $builder, array $options): void\n    {\n        $builder\n            ->add('title')\n            ->add('description')\n            \n        ;\n    }\n\n    public function configureOptions(OptionsResolver $resolver): void\n    {\n        $resolver->setDefaults([\n            'data_class' => Pins::class,\n        ]);\n    }\n}\n"
+        }
+    ]
+}

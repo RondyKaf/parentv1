@@ -1,0 +1,78 @@
+{
+    "sourceFile": "templates/base.html.twig",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1692872902545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692872936921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-        \n+        {{ {{ asset(path) }}}}\n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1692872944128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-        {{ {{ asset(path) }}}}\n+        {{ {{ asset('') }}}}\n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1692875345741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-        {{ {{ asset('') }}}}\n+        \n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1692875353542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-        \n+        {{ {{ asset(path) }}}}\n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1692875361755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-        {{ {{ asset(path) }}}}\n+        {{ {{ asset('') }}}}\n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1692875368780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-        {{ {{ asset('') }}}}\n+        {{ {{ asset('/``\n+') }}}}\n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1692875374424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,8 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-        {{ {{ asset('/``\n-') }}}}\n+        {{ {{ asset('/src/') }}}}\n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1692875390213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-        {{ {{ asset('/src/') }}}}\n+        {{ {{ asset('./') }}}}\n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1692875396100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-        {{ {{ asset('./') }}}}\n+        {{ {{ asset('./layouts/') }}}}\n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1692875409553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-        {{ {{ asset('./layouts/') }}}}\n+        {{ {{ asset('./layouts/_partials/_nav.html.twig') }}\n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1692875421825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-        {{ {{ asset('./layouts/_partials/_nav.html.twig') }}\n+        {{ asset(./layouts/_partials/_nav.html.twig') }}\n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1692875430297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-        {{ asset(./layouts/_partials/_nav.html.twig') }}\n+        \n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1692875448098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,15 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-        \n+        <nav>\n+    <ul>\n+        <li>\n+            <a href=\"{{ path('app_home') }}\">Home</a>\n+            <a href=\"{{ path('app_create-pin')}}\">New Pin</a>\n+        </li>\n+    </ul>\n+</nav>\n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1692875453952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,10 @@\n         <nav>\n     <ul>\n         <li>\n             <a href=\"{{ path('app_home') }}\">Home</a>\n-            <a href=\"{{ path('app_create-pin')}}\">New Pin</a>\n         </li>\n+        li\n     </ul>\n </nav>\n         {% block body %}{% endblock %}\n     </body>\n"
+                },
+                {
+                    "date": 1692875470542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,11 @@\n     <ul>\n         <li>\n             <a href=\"{{ path('app_home') }}\">Home</a>\n         </li>\n-        li\n+        <li>\n+            <a href=\"{{ path('app_create_pin')}}\">New Pin</a>\n+        </li>\n     </ul>\n </nav>\n         {% block body %}{% endblock %}\n     </body>\n"
+                }
+            ],
+            "date": 1692872902545,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\">\n        <title>{% block title %}Welcome!{% endblock %}</title>\n        <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">\n        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}\n        {% block stylesheets %}\n            {{ encore_entry_link_tags('app') }}\n        {% endblock %}\n\n        {% block javascripts %}\n            {{ encore_entry_script_tags('app') }}\n        {% endblock %}\n    </head>\n    <body>\n        \n        {% block body %}{% endblock %}\n    </body>\n</html>\n"
+        }
+    ]
+}

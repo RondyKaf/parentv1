@@ -1,6 +1,6 @@
 <?php
 
-namespace 
+namespace App\Entity\Tra
 
 use Doctrine\ORM\Mapping as ORM;
 

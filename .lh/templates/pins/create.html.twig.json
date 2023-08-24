@@ -1,0 +1,114 @@
+{
+    "sourceFile": "templates/pins/create.html.twig",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 24,
+            "patches": [
+                {
+                    "date": 1692832136914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692832149206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,15 @@\n-<\n\\ No newline at end of file\n+{% extends 'base.html.twig' %}\n+\n+{% block title %}{{ pin.title }}{% endblock %}\n+\n+{% block body %}\n+<style>\n+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n+</style>\n+\n+    <article>\n+        <h2>{{ pin.title }}</h2>\n+        <p>{{ pin.description }}</p>\n+    </article>\n+{% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692832171846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,6 @@\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n </style>\n \n-    <article>\n-        <h2>{{ pin.title }}</h2>\n-        <p>{{ pin.description }}</p>\n-    </article>\n+    \n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692832179522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {% extends 'base.html.twig' %}\n \n-{% block title %}{{ pin.title }}{% endblock %}\n+{% block title %}{% endblock %}\n \n {% block body %}\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n"
+                },
+                {
+                    "date": 1692832329921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n </style>\n-\n+<h1></h1>\n     \n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692832845304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n </style>\n-<h1></h1>\n-    \n+<h1>Create Pin</h1>\n+        \n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692832855201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,11 @@\n \n {% block title %}{% endblock %}\n \n {% block body %}\n-<style>\n-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n-</style>\n-<h1>Create Pin</h1>\n-        \n+    <style>\n+        .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n+        .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n+    </style>\n+    <h1>Create Pin</h1>\n+    {{ form(form, {'method': 'GET'}) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692832904426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n         .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n         .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n     </style>\n     <h1>Create Pin</h1>\n-    {{ form(form, {'method': 'GET'}) }}\n+    {{ form(form) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692832951434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n         .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n         .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n     </style>\n     <h1>Create Pin</h1>\n-    {{ form(form) }}\n+    {{ form(Form) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692833353482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n         .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n         .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n     </style>\n     <h1>Create Pin</h1>\n-    {{ form(Form) }}\n+    form\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692833365846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n         .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n         .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n     </style>\n     <h1>Create Pin</h1>\n-    form\n+    {{ form_start(Form) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692833373908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,6 @@\n         .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n     </style>\n     <h1>Create Pin</h1>\n     {{ form_start(Form) }}\n+    {{ form_e(Form) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692833379712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n         .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n     </style>\n     <h1>Create Pin</h1>\n     {{ form_start(Form) }}\n-    {{ form_e(Form) }}\n+    {{ {{ form_end(Form) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692833388583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,7 @@\n         .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n     </style>\n     <h1>Create Pin</h1>\n     {{ form_start(Form) }}\n-    {{ {{ form_end(Form) }}\n+        \n+    {{ form_end(Form) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692833401899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n         .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n     </style>\n     <h1>Create Pin</h1>\n     {{ form_start(Form) }}\n-        \n+        {{ form_widget(form) }}\n     {{ form_end(Form) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692833412201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,8 @@\n         .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n     </style>\n     <h1>Create Pin</h1>\n     {{ form_start(Form) }}\n-        {{ form_widget(form) }}\n+        {{ form_widget(Form) }}\n+        in\n     {{ form_end(Form) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692833418834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,7 @@\n     </style>\n     <h1>Create Pin</h1>\n     {{ form_start(Form) }}\n         {{ form_widget(Form) }}\n-        in\n+        <input type=\"sub\">\n     {{ form_end(Form) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692833424752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,7 @@\n     </style>\n     <h1>Create Pin</h1>\n     {{ form_start(Form) }}\n         {{ form_widget(Form) }}\n-        <input type=\"sub\">\n+        <input type=\"submit\" valuee>\n     {{ form_end(Form) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692833430328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,7 @@\n     </style>\n     <h1>Create Pin</h1>\n     {{ form_start(Form) }}\n         {{ form_widget(Form) }}\n-        <input type=\"submit\" valuee>\n+        <input type=\"submit\" value=\">\n     {{ form_end(Form) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692833442133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,7 @@\n     </style>\n     <h1>Create Pin</h1>\n     {{ form_start(Form) }}\n         {{ form_widget(Form) }}\n-        <input type=\"submit\" value=\">\n+        <input type=\"submit\" value=\"create Pin>\n     {{ form_end(Form) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692833450057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,7 @@\n     </style>\n     <h1>Create Pin</h1>\n     {{ form_start(Form) }}\n         {{ form_widget(Form) }}\n-        <input type=\"submit\" value=\"create Pin>\n+        <input type=\"submit\" value=\"create Pin\">\n     {{ form_end(Form) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692834226163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,7 @@\n     </style>\n     <h1>Create Pin</h1>\n     {{ form_start(Form) }}\n         {{ form_widget(Form) }}\n-        <input type=\"submit\" value=\"create Pin\">\n+        <input type=\"submit\" value=\"Create Pin\" form>\n     {{ form_end(Form) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692834234080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,7 @@\n     </style>\n     <h1>Create Pin</h1>\n     {{ form_start(Form) }}\n         {{ form_widget(Form) }}\n-        <input type=\"submit\" value=\"Create Pin\" form>\n+        <input type=\"submit\" value=\"Create Pin\" forma>\n     {{ form_end(Form) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692834260323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,7 @@\n     </style>\n     <h1>Create Pin</h1>\n     {{ form_start(Form) }}\n         {{ form_widget(Form) }}\n-        <input type=\"submit\" value=\"Create Pin\" forma>\n+        <input type=\"submit\" value=\"Create Pin\" formnovalidate>>\n     {{ form_end(Form) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692871658769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,7 @@\n     </style>\n     <h1>Create Pin</h1>\n     {{ form_start(Form) }}\n         {{ form_widget(Form) }}\n-        <input type=\"submit\" value=\"Create Pin\" formnovalidate>>\n+        <input type=\"submit\" value=\"Create Pin\" formnovalidate>\n     {{ form_end(Form) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1692832136914,
+            "name": "Commit-0",
+            "content": "<"
+        }
+    ]
+}
