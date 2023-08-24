@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ pin.title }}{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+    <article>
+        <h2>{{ pin.title }}</h2>
+        <p>{{ pin.description }}</p>
+    </article>
+
+    <div>
+        <a href="{{ path('app_pins_edit',{id:pin.id})}}">Edit</a>
+        <a href="#" onclick="event.preventDefault(); confirm("tu es sur") document.getElementById('js-pin-delete-form').submit();">Delete</a>
+        <a href="{{ path('app_home')}}">Go to home</a>    
+
+        
+        <form id="js-pin-delete-form" action="{{ path('app_pins_delete',{id:pin.id}) }}" method="delete" style="display:none;">
+            <input type="hidden" name="_method" value="DELETE">
+            <input type="submit" value="Delete" >
+        </form>
+    </div>
+{% endblock %}
