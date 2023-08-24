@@ -30,13 +30,13 @@ class PinsController extends AbstractController
     public function create(Request $request, EntityManagerInterface $em): Response
     {
         $pin = new Pins();
-        $form = $this->createForm(PinType::class, $pin, ["method" => "POST"]);
+        $form = $this->createForm(PinType::class, $pin, ["method" => "POST "]);
 
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
 
-            $pin = $form->getData();
+            //$pin = $form->getData();
             $em->persist($pin);
             $em->flush();
 
@@ -71,18 +71,17 @@ class PinsController extends AbstractController
 
             return $this->redirectToRoute('app_home');
         }
-        return $this->render('pins/edit.html.twig', ["Form" => $form->createView(), "pin" => $pin]);
+        return $this->render('pins/edit.html.twig', ["form" => $form->createView(), "pin" => $pin]);
     }
 
     #[Route('/pins/{id<[0-9]+>}/delete/', name: 'app_pins_delete', methods: ["GET"])]
-    public function delete(Pins $pin, EntityManagerInterface $em, Request $request): Response
+    public function delete(Pins $pin, EntityManagerInterface $em): Response
     {
-
-        if ($this->isCsrfTokenValid('pin-deletion_' . $pin->getId(), $request->request->get("csrf_token"))) {
+        if($this->isCsrfTokenValid('pin-deletion_' . $pin->getId())){
             $em->remove($pin);
-            $em->flush();
+        $em->flush();
         }
-
+        
 
         return $this->redirectToRoute('app_home');
     }

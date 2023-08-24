@@ -1,0 +1,34 @@
+{
+    "sourceFile": "templates/pins/_form.html.twig",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1692885487648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692885497108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n-    <input type=\"submit\" value=\"{{ submit}}\" formnovalidate>\n+    <input type=\"submit\" value=\"{{ submitButton}}\" formnovalidate>\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692885922916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n-    <input type=\"submit\" value=\"{{ submitButton}}\" formnovalidate>\n+    <input type=\"submit\" value=\"{{ submitButtonText| }}\" formnovalidate>\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692885928775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n-    <input type=\"submit\" value=\"{{ submitButtonText| }}\" formnovalidate>\n+    <input type=\"submit\" value=\"{{ submitButtonText|default }}\" formnovalidate>\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692885937064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n-    <input type=\"submit\" value=\"{{ submitButtonText|default }}\" formnovalidate>\n+    <input type=\"submit\" value=\"{{ submitButtonText|default('create ') }}\" formnovalidate>\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1692885487648,
+            "name": "Commit-0",
+            "content": "{{ form_start(Form) }}\n    {{ form_widget(Form) }}\n    <input type=\"submit\" value=\"{{ submit}}\" formnovalidate>\n{{ form_end(Form) }}"
+        }
+    ]
+}

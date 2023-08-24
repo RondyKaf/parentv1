@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 28,
+            "activePatchIndex": 29,
             "patches": [
                 {
                     "date": 1692873251061,
@@ -120,6 +120,10 @@
                 {
                     "date": 1692878481012,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n </style>\n \n-    {{ form_start(form, {'method'}) }}\n+    {{ form_start(form, {'method':}) }}\n         {{ form_widget(form) }}\n         <input type=\"submit\" value=\"Edit pin\" formnovalidate>\n     {{ form_end(form) }}\n \n"
+                },
+                {
+                    "date": 1692885664375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n <style>\n     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n </style>\n-    h1\n+    <h1></h1>\n     {{ include('pins/_form.html.twig', {\"submitButtonText\":\"Update Pin\"}) }}\n     \n {% endblock %}\n  \n\\ No newline at end of file\n"
                 }
             ],
             "date": 1692873251061,

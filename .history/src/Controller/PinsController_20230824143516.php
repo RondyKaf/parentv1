@@ -71,7 +71,7 @@ class PinsController extends AbstractController
 
             return $this->redirectToRoute('app_home');
         }
-        return $this->render('pins/edit.html.twig', ["Form" => $form->createView(), "pin" => $pin]);
+        return $this->render('pins/edit.html.twig', ["form" => $form->createView(), "pin" => $pin]);
     }
 
     #[Route('/pins/{id<[0-9]+>}/delete/', name: 'app_pins_delete', methods: ["GET"])]

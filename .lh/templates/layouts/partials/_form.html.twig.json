@@ -1,0 +1,22 @@
+{
+    "sourceFile": "templates/layouts/partials/_form.html.twig",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1692885129270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692885136174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n {{ form_start(Form) }}\n-        {{ form_widget(Form) }}\n+    {{ form_widget(Form) }}\n         <input type=\"submit\" value=\"Create Pin\" formnovalidate>\n\\ No newline at end of file\n-    {{ form_end(Form) }}\n+{{ form_end(Form) }}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1692885129270,
+            "name": "Commit-0",
+            "content": "{{ form_start(Form) }}\n        {{ form_widget(Form) }}\n        <input type=\"submit\" value=\"Create Pin\" formnovalidate>\n    {{ form_end(Form) }}"
+        }
+    ]
+}
