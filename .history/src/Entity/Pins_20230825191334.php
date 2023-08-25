@@ -34,7 +34,7 @@ class Pins
     private ?string $description = null;
 
     #[Vich\UploadableField(mapping: 'pin_image', fileNameProperty: 'imageName')]
-    #[Assert\Image(maxSize: "2M")]
+    #[Assert\Image(maxSize: "8M")]
     private ?File $imageFile = null;
 
     #[ORM\Column(length: 255, nullable: true)]

@@ -34,7 +34,6 @@ class Pins
     private ?string $description = null;
 
     #[Vich\UploadableField(mapping: 'pin_image', fileNameProperty: 'imageName')]
-    #[Assert\Image(maxSize: "2M")]
     private ?File $imageFile = null;
 
     #[ORM\Column(length: 255, nullable: true)]
@@ -51,6 +50,7 @@ class Pins
      * 
      * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile|null $imageFile
      */
+    #[Assert\Image(maxSize:8M)]
     public function setImageFile(?File $imageFile = null): void
     {
         $this->imageFile = $imageFile;
