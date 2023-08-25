@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 38,
+            "activePatchIndex": 39,
             "patches": [
                 {
                     "date": 1692832136914,
@@ -160,6 +160,10 @@
                 {
                     "date": 1692885622579,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n         .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n     </style>\n     <h1>Create Pin</h1>\n     \n-    {{ include('pins/_form.html.twig', {}) }}\n+    {{ include('pins/_form.html.twig', {\"submitButtonText\":\"\"}) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692966568615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-{% extends 'base.html.twig' %}\n+{% extends 'layouts/base.html.twig' %}\n \n {% block title %}{% endblock %}\n \n {% block body %}\n@@ -8,6 +8,6 @@\n         .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n     </style>\n     <h1>Create Pin</h1>\n     \n-    {{ include('pins/_form.html.twig', {\"submitButtonText\":\"\"}) }}\n+    {{ include('pins/_form.html.twig', {\"submitButtonText\":\"Create Pin\"}) }}\n {% endblock %}\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1692832136914,

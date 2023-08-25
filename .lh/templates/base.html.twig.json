@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 15,
+            "activePatchIndex": 63,
             "patches": [
                 {
                     "date": 1692872902545,
@@ -68,6 +68,198 @@
                 {
                     "date": 1692875470542,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,11 @@\n     <ul>\n         <li>\n             <a href=\"{{ path('app_home') }}\">Home</a>\n         </li>\n-        li\n+        <li>\n+            <a href=\"{{ path('app_create_pin')}}\">New Pin</a>\n+        </li>\n     </ul>\n </nav>\n         {% block body %}{% endblock %}\n     </body>\n"
+                },
+                {
+                    "date": 1692908126860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,16 +14,16 @@\n         {% endblock %}\n     </head>\n     <body>\n         <nav>\n-    <ul>\n-        <li>\n-            <a href=\"{{ path('app_home') }}\">Home</a>\n-        </li>\n-        <li>\n-            <a href=\"{{ path('app_create_pin')}}\">New Pin</a>\n-        </li>\n-    </ul>\n-</nav>\n+            <ul>\n+                <li>\n+                    <a href=\"{{ path('app_home') }}\">Home</a>\n+                </li>\n+                <li>\n+                    <a href=\"{{ path('app_create_pin')}}\">New Pin</a>\n+                </li>\n+            </ul>\n+            </nav>\n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1692965720294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,10 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n+\n+        mes\n         <nav>\n             <ul>\n                 <li>\n                     <a href=\"{{ path('app_home') }}\">Home</a>\n@@ -22,8 +24,8 @@\n                 <li>\n                     <a href=\"{{ path('app_create_pin')}}\">New Pin</a>\n                 </li>\n             </ul>\n-            </nav>\n+        </nav>\n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1692965736060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,11 @@\n         {% endblock %}\n     </head>\n     <body>\n \n-        mes\n+        {% for item in items %}\n+            \n+        {% endfor %}\n         <nav>\n             <ul>\n                 <li>\n                     <a href=\"{{ path('app_home') }}\">Home</a>\n"
+                },
+                {
+                    "date": 1692965741193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         {% endblock %}\n     </head>\n     <body>\n \n-        {% for item in items %}\n+        {% for ty in items %}\n             \n         {% endfor %}\n         <nav>\n             <ul>\n"
+                },
+                {
+                    "date": 1692965747192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         {% endblock %}\n     </head>\n     <body>\n \n-        {% for ty in items %}\n+        {% for type, messages in items %}\n             \n         {% endfor %}\n         <nav>\n             <ul>\n"
+                },
+                {
+                    "date": 1692965755034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         {% endblock %}\n     </head>\n     <body>\n \n-        {% for type, messages in items %}\n+        {% for type, messages in app.fla %}\n             \n         {% endfor %}\n         <nav>\n             <ul>\n"
+                },
+                {
+                    "date": 1692965760151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         {% endblock %}\n     </head>\n     <body>\n \n-        {% for type, messages in app.fla %}\n+        {% for type, messages in app.flashes %}\n             \n         {% endfor %}\n         <nav>\n             <ul>\n"
+                },
+                {
+                    "date": 1692965766650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     </head>\n     <body>\n \n         {% for type, messages in app.flashes %}\n-            \n+            for\n         {% endfor %}\n         <nav>\n             <ul>\n                 <li>\n"
+                },
+                {
+                    "date": 1692965774841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,11 @@\n     </head>\n     <body>\n \n         {% for type, messages in app.flashes %}\n-            for\n+            {% for item in items %}\n+                \n+            {% endfor %}\n         {% endfor %}\n         <nav>\n             <ul>\n                 <li>\n"
+                },
+                {
+                    "date": 1692965781158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     </head>\n     <body>\n \n         {% for type, messages in app.flashes %}\n-            {% for item in items %}\n+            {% for messagee in items %}\n                 \n             {% endfor %}\n         {% endfor %}\n         <nav>\n"
+                },
+                {
+                    "date": 1692965789174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     </head>\n     <body>\n \n         {% for type, messages in app.flashes %}\n-            {% for messagee in items %}\n+            {% for message in messages %}\n                 \n             {% endfor %}\n         {% endfor %}\n         <nav>\n"
+                },
+                {
+                    "date": 1692965865064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     <body>\n \n         {% for type, messages in app.flashes %}\n             {% for message in messages %}\n-                \n+                div\n             {% endfor %}\n         {% endfor %}\n         <nav>\n             <ul>\n"
+                },
+                {
+                    "date": 1692965892941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,11 @@\n     <body>\n \n         {% for type, messages in app.flashes %}\n             {% for message in messages %}\n-                div\n+                <div>\n+                \n+                </div>\n             {% endfor %}\n         {% endfor %}\n         <nav>\n             <ul>\n"
+                },
+                {
+                    "date": 1692965899277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n \n         {% for type, messages in app.flashes %}\n             {% for message in messages %}\n                 <div>\n-                \n+                    {{ message }}\n                 </div>\n             {% endfor %}\n         {% endfor %}\n         <nav>\n"
+                },
+                {
+                    "date": 1692965955030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     <body>\n \n         {% for type, messages in app.flashes %}\n             {% for message in messages %}\n-                <div>\n+                <div role>\n                     {{ message }}\n                 </div>\n             {% endfor %}\n         {% endfor %}\n"
+                },
+                {
+                    "date": 1692965985281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     <body>\n \n         {% for type, messages in app.flashes %}\n             {% for message in messages %}\n-                <div role>\n+                <div  role=\"alert\">\n                     {{ message }}\n                 </div>\n             {% endfor %}\n         {% endfor %}\n"
+                },
+                {
+                    "date": 1692966011564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     <body>\n \n         {% for type, messages in app.flashes %}\n             {% for message in messages %}\n-                <div  role=\"alert\">\n+                <div class=\"type \" role=\"alert\">\n                     {{ message }}\n                 </div>\n             {% endfor %}\n         {% endfor %}\n"
+                },
+                {
+                    "date": 1692966022187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     <body>\n \n         {% for type, messages in app.flashes %}\n             {% for message in messages %}\n-                <div class=\"type \" role=\"alert\">\n+                <div class=\"alert alert\" role=\"alert\">\n                     {{ message }}\n                 </div>\n             {% endfor %}\n         {% endfor %}\n"
+                },
+                {
+                    "date": 1692966027871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     <body>\n \n         {% for type, messages in app.flashes %}\n             {% for message in messages %}\n-                <div class=\"alert alert\" role=\"alert\">\n+                <div class=\"alert alert-{{type}}\" role=\"alert\">\n                     {{ message }}\n                 </div>\n             {% endfor %}\n         {% endfor %}\n"
+                },
+                {
+                    "date": 1692966134655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     <body>\n \n         {% for type, messages in app.flashes %}\n             {% for message in messages %}\n-                <div class=\"alert alert-{{type}}\" role=\"alert\">\n+                <div class=\"alert alert-{{type }}\" role=\"alert\">\n                     {{ message }}\n                 </div>\n             {% endfor %}\n         {% endfor %}\n"
+                },
+                {
+                    "date": 1692966145076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n         <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">\n         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}\n         {% block stylesheets %}\n             {{ encore_entry_link_tags('app') }}\n+            <\n         {% endblock %}\n \n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n@@ -16,9 +17,9 @@\n     <body>\n \n         {% for type, messages in app.flashes %}\n             {% for message in messages %}\n-                <div class=\"alert alert-{{type }}\" role=\"alert\">\n+                <div class=\"alert alert-{{ type }}\" role=\"alert\">\n                     {{ message }}\n                 </div>\n             {% endfor %}\n         {% endfor %}\n"
+                },
+                {
+                    "date": 1692966150402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n         <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">\n         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}\n         {% block stylesheets %}\n             {{ encore_entry_link_tags('app') }}\n-            <\n+            <sty:e\n         {% endblock %}\n \n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n"
+                },
+                {
+                    "date": 1692966158288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n         <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">\n         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}\n         {% block stylesheets %}\n             {{ encore_entry_link_tags('app') }}\n-            <sty:e\n+            <style></style>\n         {% endblock %}\n \n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n"
+                },
+                {
+                    "date": 1692966168980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,11 @@\n         <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">\n         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}\n         {% block stylesheets %}\n             {{ encore_entry_link_tags('app') }}\n-            <style></style>\n+            <style>\n+                .pad\n+            </style>\n         {% endblock %}\n \n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n"
+                },
+                {
+                    "date": 1692966174238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}\n         {% block stylesheets %}\n             {{ encore_entry_link_tags('app') }}\n             <style>\n-                .pad\n+                alert\n             </style>\n         {% endblock %}\n \n         {% block javascripts %}\n"
+                },
+                {
+                    "date": 1692966182175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,11 @@\n         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}\n         {% block stylesheets %}\n             {{ encore_entry_link_tags('app') }}\n             <style>\n-                alert\n+                .alert{\n+                    padding: 0;\n+                }\n             </style>\n         {% endblock %}\n \n         {% block javascripts %}\n"
+                },
+                {
+                    "date": 1692966188020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,10 @@\n         {% block stylesheets %}\n             {{ encore_entry_link_tags('app') }}\n             <style>\n                 .alert{\n-                    padding: 0;\n+                    padding: 10px;\n+                    \n                 }\n             </style>\n         {% endblock %}\n \n"
+                },
+                {
+                    "date": 1692966193702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n             {{ encore_entry_link_tags('app') }}\n             <style>\n                 .alert{\n                     padding: 10px;\n-                    \n+                    color\n                 }\n             </style>\n         {% endblock %}\n \n"
+                },
+                {
+                    "date": 1692966199631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n             {{ encore_entry_link_tags('app') }}\n             <style>\n                 .alert{\n                     padding: 10px;\n-                    color\n+                    color: white;\n                 }\n             </style>\n         {% endblock %}\n \n"
+                },
+                {
+                    "date": 1692966227002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,14 +6,9 @@\n         <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">\n         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}\n         {% block stylesheets %}\n             {{ encore_entry_link_tags('app') }}\n-            <style>\n-                .alert{\n-                    padding: 10px;\n-                    color: white;\n-                }\n-            </style>\n+            \n         {% endblock %}\n \n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n"
+                },
+                {
+                    "date": 1692966232562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,15 @@\n             {{ encore_entry_link_tags('app') }}\n             \n         {% endblock %}\n \n+        <style>\n+                .alert{\n+                    padding: 10px;\n+                    color: white;\n+                }\n+            </style>\n+            \n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n"
+                },
+                {
+                    "date": 1692966241905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,14 +10,13 @@\n             \n         {% endblock %}\n \n         <style>\n-                .alert{\n-                    padding: 10px;\n-                    color: white;\n-                }\n-            </style>\n-            \n+            .alert{\n+                padding: 10px;\n+                color: white;\n+            }\n+        </style>\n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n"
+                },
+                {
+                    "date": 1692966251860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n         <style>\n             .alert{\n                 padding: 10px;\n                 color: white;\n+                text-al\n             }\n         </style>\n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n"
+                },
+                {
+                    "date": 1692966259099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         <style>\n             .alert{\n                 padding: 10px;\n                 color: white;\n-                text-al\n+                text-align:center;\n             }\n         </style>\n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n"
+                },
+                {
+                    "date": 1692966264309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n                 padding: 10px;\n                 color: white;\n                 text-align:center;\n             }\n+            \n         </style>\n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n"
+                },
+                {
+                    "date": 1692966273608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n                 padding: 10px;\n                 color: white;\n                 text-align:center;\n             }\n-            \n+            .alert-secc\n         </style>\n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n"
+                },
+                {
+                    "date": 1692966284100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,11 @@\n                 padding: 10px;\n                 color: white;\n                 text-align:center;\n             }\n-            .alert-secc\n+            .alert-success{\n+                \n+            }\n         </style>\n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n"
+                },
+                {
+                    "date": 1692966290005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n                 color: white;\n                 text-align:center;\n             }\n             .alert-success{\n-                \n+                backg\n             }\n         </style>\n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n"
+                },
+                {
+                    "date": 1692966297307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n                 color: white;\n                 text-align:center;\n             }\n             .alert-success{\n-                backg\n+                background: greean\n             }\n         </style>\n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n"
+                },
+                {
+                    "date": 1692966310758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n                 color: white;\n                 text-align:center;\n             }\n             .alert-success{\n-                background: greean\n+                background-color: green\n             }\n         </style>\n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n"
+                },
+                {
+                    "date": 1692966445147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n             }\n             .alert-success{\n                 background-color: green\n             }\n+            \n         </style>\n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n"
+                },
+                {
+                    "date": 1692966455086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,15 +12,17 @@\n \n         <style>\n             .alert{\n                 padding: 10px;\n+                ma\n                 color: white;\n                 text-align:center;\n+\n             }\n             .alert-success{\n                 background-color: green\n             }\n-            \n+\n         </style>\n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n"
+                },
+                {
+                    "date": 1692966461011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \n         <style>\n             .alert{\n                 padding: 10px;\n-                ma\n+                margin:0px;\n                 color: white;\n                 text-align:center;\n \n             }\n"
+                },
+                {
+                    "date": 1692966484950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,11 @@\n             }\n             .alert-success{\n                 background-color: green\n             }\n+            .alert-success{\n+                background-color: green\n+            }\n \n         </style>\n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n"
+                },
+                {
+                    "date": 1692966493830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,10 @@\n             }\n             .alert-success{\n                 background-color: green\n             }\n-            .alert-success{\n-                background-color: green\n+            .alert-error{\n+                background-: green\n             }\n \n         </style>\n         {% block javascripts %}\n"
+                },
+                {
+                    "date": 1692966499724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,11 +21,13 @@\n             .alert-success{\n                 background-color: green\n             }\n             .alert-error{\n-                background-: green\n+                background-red: green\n             }\n-\n+            .alert-success{\n+                background-color: green\n+            }\n         </style>\n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n"
+                },
+                {
+                    "date": 1692966505828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n             }\n             .alert-error{\n                 background-red: green\n             }\n-            .alert-success{\n+            .alert-info{\n                 background-color: green\n             }\n         </style>\n         {% block javascripts %}\n"
+                },
+                {
+                    "date": 1692966511997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n             .alert-error{\n                 background-red: green\n             }\n             .alert-info{\n-                background-color: green\n+                background-color: blue\n             }\n         </style>\n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n"
                 }
             ],
             "date": 1692872902545,

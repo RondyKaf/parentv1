@@ -1,0 +1,42 @@
+{
+    "sourceFile": "templates/layouts/base.html.twig",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1692966665718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692966702697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n         {% endblock %}\n     </head>\n     <body>\n \n-       \n+       {{ include(template_name, with, ignore_missing) }}\n         <nav>\n             <ul>\n                 <li>\n                     <a href=\"{{ path('app_home') }}\">Home</a>\n"
+                },
+                {
+                    "date": 1692966710006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n         {% endblock %}\n     </head>\n     <body>\n \n-       {{ include(template_name, with, ignore_missing) }}\n+       {{ include() }}\n         <nav>\n             <ul>\n                 <li>\n                     <a href=\"{{ path('app_home') }}\">Home</a>\n"
+                },
+                {
+                    "date": 1692966716530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n         {% endblock %}\n     </head>\n     <body>\n \n-       {{ include() }}\n+       {{ include(layouts/) }}\n         <nav>\n             <ul>\n                 <li>\n                     <a href=\"{{ path('app_home') }}\">Home</a>\n"
+                },
+                {
+                    "date": 1692966731922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n         {% endblock %}\n     </head>\n     <body>\n \n-       {{ include(layouts/) }}\n+       {{ include('layouts/partials/) }}\n         <nav>\n             <ul>\n                 <li>\n                     <a href=\"{{ path('app_home') }}\">Home</a>\n"
+                },
+                {
+                    "date": 1692966743406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n         {% endblock %}\n     </head>\n     <body>\n \n-       {{ include('layouts/partials/) }}\n+       {{ include('layouts/partials/_flash_message) }}\n         <nav>\n             <ul>\n                 <li>\n                     <a href=\"{{ path('app_home') }}\">Home</a>\n"
+                },
+                {
+                    "date": 1692966762913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n         {% endblock %}\n     </head>\n     <body>\n \n-       {{ include('layouts/partials/_flash_message) }}\n+       {{ include('layouts/partials/_flash_messages.html.) }}\n         <nav>\n             <ul>\n                 <li>\n                     <a href=\"{{ path('app_home') }}\">Home</a>\n"
+                }
+            ],
+            "date": 1692966665718,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\">\n        <title>{% block title %}Welcome!{% endblock %}</title>\n        <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">\n        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}\n        {% block stylesheets %}\n            {{ encore_entry_link_tags('app') }}\n            \n        {% endblock %}\n\n        <style>\n            .alert{\n                padding: 10px;\n                margin:0px;\n                color: white;\n                text-align:center;\n\n            }\n            .alert-success{\n                background-color: green\n            }\n            .alert-error{\n                background-red: green\n            }\n            .alert-info{\n                background-color: blue\n            }\n        </style>\n        {% block javascripts %}\n            {{ encore_entry_script_tags('app') }}\n        {% endblock %}\n    </head>\n    <body>\n\n       \n        <nav>\n            <ul>\n                <li>\n                    <a href=\"{{ path('app_home') }}\">Home</a>\n                </li>\n                <li>\n                    <a href=\"{{ path('app_create_pin')}}\">New Pin</a>\n                </li>\n            </ul>\n        </nav>\n        {% block body %}{% endblock %}\n    </body>\n</html>\n"
+        }
+    ]
+}

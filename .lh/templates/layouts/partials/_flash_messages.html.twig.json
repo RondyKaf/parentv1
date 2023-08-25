@@ -1,0 +1,34 @@
+{
+    "sourceFile": "templates/layouts/partials/_flash_messages.html.twig",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1692966671393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692966678050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n  {% for type, messages in app.flashes %}\n-            {% for message in messages %}\n+    {% for message in messages %}\n                 <div class=\"alert alert-{{ type }}\" role=\"alert\">\n                     {{ message }}\n                 </div>\n             {% endfor %}\n\\ No newline at end of file\n-        {% endfor %}\n+{% endfor %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692966683373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n  {% for type, messages in app.flashes %}\n     {% for message in messages %}\n                 <div class=\"alert alert-{{ type }}\" role=\"alert\">\n-                    {{ message }}\n+        {{ message }}\n                 </div>\n             {% endfor %}\n {% endfor %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692966688888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n  {% for type, messages in app.flashes %}\n     {% for message in messages %}\n-                <div class=\"alert alert-{{ type }}\" role=\"alert\">\n-        {{ message }}\n-                </div>\n+        <div class=\"alert alert-{{ type }}\" role=\"alert\">\n+            {{ message }}\n+            </div>\n             {% endfor %}\n {% endfor %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692966696285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n  {% for type, messages in app.flashes %}\n     {% for message in messages %}\n         <div class=\"alert alert-{{ type }}\" role=\"alert\">\n             {{ message }}\n-            </div>\n-            {% endfor %}\n+        </div>\n+    {% endfor %}\n {% endfor %}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1692966671393,
+            "name": "Commit-0",
+            "content": " {% for type, messages in app.flashes %}\n            {% for message in messages %}\n                <div class=\"alert alert-{{ type }}\" role=\"alert\">\n                    {{ message }}\n                </div>\n            {% endfor %}\n        {% endfor %}"
+        }
+    ]
+}
