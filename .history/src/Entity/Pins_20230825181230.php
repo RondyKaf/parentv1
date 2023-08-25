@@ -33,7 +33,7 @@ class Pins
     #[Assert\Length(min: 10, minMessage: "doit contenir au moins 10 caractères")]
     private ?string $description = null;
 
-    #[Vich\UploadableField(mapping: 'pin_image', fileNameProperty: 'imageName')]
+    #[Vich\UploadableField(mapping: 'products', fileNameProperty: 'imageName', size: 'imageSize')]
     private ?File $imageFile = null;
 
     #[ORM\Column(length: 255, nullable: true)]
@@ -57,7 +57,7 @@ class Pins
         if (null !== $imageFile) {
             // It is required that at least one field changes if you are using doctrine
             // otherwise the event listeners won't be called and the file is lost
-            $this->setUpdatedAt(new \DateTimeImmutable());
+            $this->updatedAt = new \DateTimeImmutable();
         }
     }
 
@@ -65,7 +65,6 @@ class Pins
     {
         return $this->imageFile;
     }
-
 
     public function getId(): ?int
     {

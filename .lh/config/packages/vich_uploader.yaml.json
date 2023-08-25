@@ -1,0 +1,50 @@
+{
+    "sourceFile": "config/packages/vich_uploader.yaml",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1692982898789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692982936708,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n vich_uploader:\n     db_driver: orm\n \n     mappings:\n-       products:\n+       pin:\n            uri_prefix: /images/products\n            upload_destination: '%kernel.project_dir%/public/images/products'\n            namer: Vich\\UploaderBundle\\Naming\\SmartUniqueNamer\n"
+                },
+                {
+                    "date": 1692982949559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n vich_uploader:\n     db_driver: orm\n \n     mappings:\n-       pin:\n-           uri_prefix: /images/products\n+       pin_image:\n+           uri_prefix: /upda\n            upload_destination: '%kernel.project_dir%/public/images/products'\n            namer: Vich\\UploaderBundle\\Naming\\SmartUniqueNamer\n"
+                },
+                {
+                    "date": 1692982956953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n     db_driver: orm\n \n     mappings:\n        pin_image:\n-           uri_prefix: /upda\n+           uri_prefix: /uploads/\n            upload_destination: '%kernel.project_dir%/public/images/products'\n            namer: Vich\\UploaderBundle\\Naming\\SmartUniqueNamer\n"
+                },
+                {
+                    "date": 1692982963082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n     db_driver: orm\n \n     mappings:\n        pin_image:\n-           uri_prefix: /uploads/\n+           uri_prefix: /uploads/pins\n            upload_destination: '%kernel.project_dir%/public/images/products'\n            namer: Vich\\UploaderBundle\\Naming\\SmartUniqueNamer\n"
+                },
+                {
+                    "date": 1692983012561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,6 @@\n \n     mappings:\n        pin_image:\n            uri_prefix: /uploads/pins\n-           upload_destination: '%kernel.project_dir%/public/images/products'\n+           upload_destination: '%kernel.project_dir%/public/ul/products'\n            namer: Vich\\UploaderBundle\\Naming\\SmartUniqueNamer\n"
+                },
+                {
+                    "date": 1692983022518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,6 @@\n \n     mappings:\n        pin_image:\n            uri_prefix: /uploads/pins\n-           upload_destination: '%kernel.project_dir%/public/ul/products'\n+           upload_destination: '%kernel.project_dir%/public/uploads/pins'\n            namer: Vich\\UploaderBundle\\Naming\\SmartUniqueNamer\n"
+                },
+                {
+                    "date": 1692984315713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,11 @@\n vich_uploader:\n     db_driver: orm\n \n     mappings:\n-       pin_image:\n-           uri_prefix: /uploads/pins\n-           upload_destination: '%kernel.project_dir%/public/uploads/pins'\n-           namer: Vich\\UploaderBundle\\Naming\\SmartUniqueNamer\n+        pin_image:\n+            uri_prefix: /uploads/pins\n+            upload_destination: \"%kernel.project_dir%/public/uploads/pin\"\n+            namer: Vich\\UploaderBundle\\Naming\\SmartUniqueNamer\n+\n+             delete_on_update: true\n+            delete_on_remove: true\n"
+                },
+                {
+                    "date": 1692984338700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,4 +8,5 @@\n             namer: Vich\\UploaderBundle\\Naming\\SmartUniqueNamer\n \n             delete_on_update: true\n             delete_on_remove: true\n+            inject_on_load: false\n"
+                }
+            ],
+            "date": 1692982898789,
+            "name": "Commit-0",
+            "content": "vich_uploader:\n    db_driver: orm\n\n    mappings:\n       products:\n           uri_prefix: /images/products\n           upload_destination: '%kernel.project_dir%/public/images/products'\n           namer: Vich\\UploaderBundle\\Naming\\SmartUniqueNamer\n"
+        }
+    ]
+}
