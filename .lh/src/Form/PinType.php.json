@@ -3,11 +3,31 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1692875068700,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692984609774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,21 @@\n {\n     public function buildForm(FormBuilderInterface $builder, array $options): void\n     {\n         $builder\n+        ->add('imageFile', VichImageType::class, [\n+            'required' => false,\n+            'allow_delete' => true,\n+            'delete_label' => '...',\n+            'download_label' => '...',\n+            'download_uri' => true,\n+            'image_uri' => true,\n+            'imagine_pattern' => '...',\n+            'asset_helper' => true,\n+        ])\n             ->add('title')\n             ->add('description')\n-            \n+\n         ;\n     }\n \n     public function configureOptions(OptionsResolver $resolver): void\n@@ -23,5 +33,5 @@\n         $resolver->setDefaults([\n             'data_class' => Pins::class,\n         ]);\n     }\n-}\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692984616323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,18 +11,18 @@\n {\n     public function buildForm(FormBuilderInterface $builder, array $options): void\n     {\n         $builder\n-        ->add('imageFile', VichImageType::class, [\n-            'required' => false,\n-            'allow_delete' => true,\n-            'delete_label' => '...',\n-            'download_label' => '...',\n-            'download_uri' => true,\n-            'image_uri' => true,\n-            'imagine_pattern' => '...',\n-            'asset_helper' => true,\n-        ])\n+            ->add('imageFile', VichImageType::class, [\n+                'required' => false,\n+                'allow_delete' => true,\n+                'delete_label' => '...',\n+                'download_label' => '...',\n+                'download_uri' => true,\n+                'image_uri' => true,\n+                'imagine_pattern' => '...',\n+                'asset_helper' => true,\n+            ])\n             ->add('title')\n             ->add('description')\n \n         ;\n"
+                },
+                {
+                    "date": 1692984678005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n use App\\Entity\\Pins;\n use Symfony\\Component\\Form\\AbstractType;\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n+use Vich\\UploaderBundle\\Form\\Type\\VichImageType;\n \n class PinType extends AbstractType\n {\n     public function buildForm(FormBuilderInterface $builder, array $options): void\n"
+                },
+                {
+                    "date": 1692984683632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n use Symfony\\Component\\Form\\AbstractType;\n use Symfony\\Component\\Form\\FormBuilderInterface;\n use Symfony\\Component\\OptionsResolver\\OptionsResolver;\n use Vich\\UploaderBundle\\Form\\Type\\VichImageType;\n-use Vich\\UploaderBundle\\Form\\Type\\VichImageType;\n \n+\n class PinType extends AbstractType\n {\n     public function buildForm(FormBuilderInterface $builder, array $options): void\n     {\n"
+                },
+                {
+                    "date": 1692984736924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,8 @@\n                 'delete_label' => '...',\n                 'download_label' => '...',\n                 'download_uri' => true,\n                 'image_uri' => true,\n-                'imagine_pattern' => '...',\n                 'asset_helper' => true,\n             ])\n             ->add('title')\n             ->add('description')\n"
                 }
             ],
             "date": 1692875068700,

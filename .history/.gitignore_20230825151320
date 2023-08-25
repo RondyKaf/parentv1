@@ -25,7 +25,3 @@
 npm-debug.log
 yarn-error.log
 ###< symfony/webpack-encore-bundle ###
-
-###> custom even var ###
-public/uploads/
-### end custom even var ###

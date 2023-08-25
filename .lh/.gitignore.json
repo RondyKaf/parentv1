@@ -1,0 +1,50 @@
+{
+    "sourceFile": ".gitignore",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1692986465660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692986488760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n npm-debug.log\n yarn-error.log\n ###< symfony/webpack-encore-bundle ###\n \n-###> symfony/webpack-encore-bundle ###\n+###> custom e ###\n /node_modules/\n /public/build/\n npm-debug.log\n yarn-error.log\n"
+                },
+                {
+                    "date": 1692986505138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,10 +25,10 @@\n npm-debug.log\n yarn-error.log\n ###< symfony/webpack-encore-bundle ###\n \n-###> custom e ###\n+###> custom even var ###\n /node_modules/\n /public/build/\n npm-debug.log\n yarn-error.log\n\\ No newline at end of file\n-###< symfony/webpack-encore-bundle ###\n+###  ###\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692986512282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,5 +30,5 @@\n /node_modules/\n /public/build/\n npm-debug.log\n yarn-error.log\n-###  ###\n\\ No newline at end of file\n+### end custom even var ###\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692986517414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,8 @@\n ###< symfony/phpunit-bridge ###\n \n ###> symfony/webpack-encore-bundle ###\n /node_modules/\n-/public/build/\n npm-debug.log\n yarn-error.log\n ###< symfony/webpack-encore-bundle ###\n \n"
+                },
+                {
+                    "date": 1692986524821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,7 @@\n yarn-error.log\n ###< symfony/webpack-encore-bundle ###\n \n ###> custom even var ###\n-/node_modules/\n /public/build/\n-npm-debug.log\n-yarn-error.log\n+\n ### end custom even var ###\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692986543698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,7 +25,9 @@\n yarn-error.log\n ###< symfony/webpack-encore-bundle ###\n \n ###> custom even var ###\n+/node_modules/\n /public/build/\n-\n+npm-debug.log\n+yarn-error.log\n ### end custom even var ###\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692986548822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,14 +20,15 @@\n ###< symfony/phpunit-bridge ###\n \n ###> symfony/webpack-encore-bundle ###\n /node_modules/\n+/public/build/\n+\n npm-debug.log\n yarn-error.log\n ###< symfony/webpack-encore-bundle ###\n \n ###> custom even var ###\n /node_modules/\n-/public/build/\n npm-debug.log\n yarn-error.log\n ### end custom even var ###\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692986555588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,14 +21,11 @@\n \n ###> symfony/webpack-encore-bundle ###\n /node_modules/\n /public/build/\n-\n npm-debug.log\n yarn-error.log\n ###< symfony/webpack-encore-bundle ###\n \n ###> custom even var ###\n-/node_modules/\n-npm-debug.log\n-yarn-error.log\n+ public/uploads/\n ### end custom even var ###\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1692986465659,
+            "name": "Commit-0",
+            "content": "\n###> symfony/framework-bundle ###\n/.env.local\n/.env.local.php\n/.env.*.local\n/config/secrets/prod/prod.decrypt.private.php\n/public/bundles/\n/var/\n/vendor/\n###< symfony/framework-bundle ###\n\n###> phpunit/phpunit ###\n/phpunit.xml\n.phpunit.result.cache\n###< phpunit/phpunit ###\n\n###> symfony/phpunit-bridge ###\n.phpunit.result.cache\n/phpunit.xml\n###< symfony/phpunit-bridge ###\n\n###> symfony/webpack-encore-bundle ###\n/node_modules/\n/public/build/\nnpm-debug.log\nyarn-error.log\n###< symfony/webpack-encore-bundle ###\n\n###> symfony/webpack-encore-bundle ###\n/node_modules/\n/public/build/\nnpm-debug.log\nyarn-error.log\n###< symfony/webpack-encore-bundle ###"
+        }
+    ]
+}
