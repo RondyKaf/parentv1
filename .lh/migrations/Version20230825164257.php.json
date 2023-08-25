@@ -1,0 +1,26 @@
+{
+    "sourceFile": "migrations/Version20230825164257.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1692981787552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692981792614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n final class Version20230825164257 extends AbstractMigration\n {\n     public function getDescription(): string\n     {\n-        return 'add';\n+        return 'add image_name';\n     }\n \n     public function up(Schema $schema): void\n     {\n"
+                },
+                {
+                    "date": 1692981803019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n final class Version20230825164257 extends AbstractMigration\n {\n     public function getDescription(): string\n     {\n-        return 'add image_name';\n+        return 'add image_name to pins table';\n     }\n \n     public function up(Schema $schema): void\n     {\n"
+                }
+            ],
+            "date": 1692981787552,
+            "name": "Commit-0",
+            "content": "<?php\n\ndeclare(strict_types=1);\n\nnamespace DoctrineMigrations;\n\nuse Doctrine\\DBAL\\Schema\\Schema;\nuse Doctrine\\Migrations\\AbstractMigration;\n\n/**\n * Auto-generated Migration: Please modify to your needs!\n */\nfinal class Version20230825164257 extends AbstractMigration\n{\n    public function getDescription(): string\n    {\n        return 'add';\n    }\n\n    public function up(Schema $schema): void\n    {\n        // this up() migration is auto-generated, please modify it to your needs\n        $this->addSql('ALTER TABLE pins ADD image_name VARCHAR(255) DEFAULT NULL, CHANGE created_at created_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL COMMENT \\'(DC2Type:datetime_immutable)\\', CHANGE updated_at updated_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL COMMENT \\'(DC2Type:datetime_immutable)\\'');\n    }\n\n    public function down(Schema $schema): void\n    {\n        // this down() migration is auto-generated, please modify it to your needs\n        $this->addSql('ALTER TABLE pins DROP image_name, CHANGE created_at created_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL, CHANGE updated_at updated_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL');\n    }\n}\n"
+        }
+    ]
+}
