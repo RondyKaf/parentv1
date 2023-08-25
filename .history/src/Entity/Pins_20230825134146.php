@@ -6,7 +6,7 @@ use App\Entity\Traits\Timestampables;
 use App\Repository\PinsRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Validator\Constraint as Asser
 
 #[ORM\Entity(repositoryClass: PinsRepository::class)]
 #[ORM\HasLifecycleCallbacks]
@@ -20,15 +20,9 @@ class Pins
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
-    #[Assert\NotBlank()]
-    #[Assert\Length(min: 3, minMessage: "doit contenir au moins 3 caractères")]
-
     private ?string $title = null;
 
     #[ORM\Column(type: Types::TEXT)]
-    #[Assert\NotBlank()]
-    #[Assert\Length(min: 10, minMessage: "doit contenir au moins 10 caractères")]
-
     private ?string $description = null;
     use Timestampables;
 

@@ -21,14 +21,12 @@ class Pins
 
     #[ORM\Column(length: 255)]
     #[Assert\NotBlank()]
-    #[Assert\Length(min: 3, minMessage: "doit contenir au moins 3 caractères")]
-
+    #[Assert\Length(min: 3)]
     private ?string $title = null;
 
     #[ORM\Column(type: Types::TEXT)]
     #[Assert\NotBlank()]
-    #[Assert\Length(min: 10, minMessage: "doit contenir au moins 10 caractères")]
-
+    #[Assert\Length(min: 10,min)]
     private ?string $description = null;
     use Timestampables;
 
