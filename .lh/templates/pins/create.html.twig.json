@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 39,
+            "activePatchIndex": 46,
             "patches": [
                 {
                     "date": 1692832136914,
@@ -164,6 +164,34 @@
                 {
                     "date": 1692966568615,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-{% extends 'base.html.twig' %}\n+{% extends 'layouts/base.html.twig' %}\n \n {% block title %}{% endblock %}\n \n {% block body %}\n@@ -8,6 +8,6 @@\n         .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n     </style>\n     <h1>Create Pin</h1>\n     \n-    {{ include('pins/_form.html.twig', {\"submitButtonText\":\"\"}) }}\n+    {{ include('pins/_form.html.twig', {\"submitButtonText\":\"Create Pin\"}) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692971396725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,8 @@\n \n {% block title %}{% endblock %}\n \n {% block body %}\n-    <style>\n-        .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }\n-        .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }\n-    </style>\n     <h1>Create Pin</h1>\n     \n     {{ include('pins/_form.html.twig', {\"submitButtonText\":\"Create Pin\"}) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692971540097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,10 @@\n \n {% block title %}{% endblock %}\n \n {% block body %}\n+\n+div.{{ form_row(form) }}\n     <h1>Create Pin</h1>\n     \n     {{ include('pins/_form.html.twig', {\"submitButtonText\":\"Create Pin\"}) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692971551077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,11 @@\n {% block title %}{% endblock %}\n \n {% block body %}\n \n-div.{{ form_row(form) }}\n+<div class=\"row\">\n+    div.col-\n+</div>\n     <h1>Create Pin</h1>\n     \n     {{ include('pins/_form.html.twig', {\"submitButtonText\":\"Create Pin\"}) }}\n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692971565503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,10 @@\n \n {% block body %}\n \n <div class=\"row\">\n-    div.col-\n+    <div class=\"col-md-6\">\n+    </div>\n </div>\n     <h1>Create Pin</h1>\n     \n     {{ include('pins/_form.html.twig', {\"submitButtonText\":\"Create Pin\"}) }}\n"
+                },
+                {
+                    "date": 1692971572033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,11 @@\n {% block body %}\n \n <div class=\"row\">\n     <div class=\"col-md-6\">\n+     <h1>Create Pin</h1>\n+    \n+    {{ include('pins/_form.html.twig', {\"submitButtonText\":\"Create Pin\"}) }}    \n     </div>\n </div>\n-    <h1>Create Pin</h1>\n-    \n-    {{ include('pins/_form.html.twig', {\"submitButtonText\":\"Create Pin\"}) }}\n+   \n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692971578856,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,10 @@\n {% block body %}\n \n <div class=\"row\">\n     <div class=\"col-md-6\">\n-     <h1>Create Pin</h1>\n-    \n-    {{ include('pins/_form.html.twig', {\"submitButtonText\":\"Create Pin\"}) }}    \n+        <h1>Create Pin</h1>\n+        {{ include('pins/_form.html.twig', {\"submitButtonText\":\"Create Pin\"}) }}    \n     </div>\n </div>\n    \n {% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692971636047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n {% block body %}\n \n <div class=\"row\">\n-    <div class=\"col-md-6\">\n+    <div class=\"col-md-6 mx-\">\n         <h1>Create Pin</h1>\n         {{ include('pins/_form.html.twig', {\"submitButtonText\":\"Create Pin\"}) }}    \n     </div>\n </div>\n"
                 }
             ],
             "date": 1692832136914,

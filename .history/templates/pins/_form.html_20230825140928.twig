@@ -1,0 +1,8 @@
+{{ form_start(Form) }}
+    {{ form_widget(Form) }}
+
+
+    <div class="mx-auto">
+        <input type="submit" value="{{ submitButtonText|default('Create Pin') }}" formnovalidate class="btn btn-primary btn-block">
+    </div>
+{{ form_end(Form) }}

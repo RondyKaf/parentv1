@@ -1,0 +1,50 @@
+{
+    "sourceFile": "templates/layouts/partials/_footer.html.twig",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1692970852204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692970869779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,46 @@\n-collapse navbar-collapse \n\\ No newline at end of file\n+<footer class=\"bg-dark text-center text-white\">\n+  <!-- Grid container -->\n+  <div class=\"container p-4 pb-0\">\n+    <!-- Section: Social media -->\n+    <section class=\"mb-4\">\n+      <!-- Facebook -->\n+      <a class=\"btn btn-outline-light btn-floating m-1\" href=\"#!\" role=\"button\"\n+        ><i class=\"fab fa-facebook-f\"></i\n+      ></a>\n+\n+      <!-- Twitter -->\n+      <a class=\"btn btn-outline-light btn-floating m-1\" href=\"#!\" role=\"button\"\n+        ><i class=\"fab fa-twitter\"></i\n+      ></a>\n+\n+      <!-- Google -->\n+      <a class=\"btn btn-outline-light btn-floating m-1\" href=\"#!\" role=\"button\"\n+        ><i class=\"fab fa-google\"></i\n+      ></a>\n+\n+      <!-- Instagram -->\n+      <a class=\"btn btn-outline-light btn-floating m-1\" href=\"#!\" role=\"button\"\n+        ><i class=\"fab fa-instagram\"></i\n+      ></a>\n+\n+      <!-- Linkedin -->\n+      <a class=\"btn btn-outline-light btn-floating m-1\" href=\"#!\" role=\"button\"\n+        ><i class=\"fab fa-linkedin-in\"></i\n+      ></a>\n+\n+      <!-- Github -->\n+      <a class=\"btn btn-outline-light btn-floating m-1\" href=\"#!\" role=\"button\"\n+        ><i class=\"fab fa-github\"></i\n+      ></a>\n+    </section>\n+    <!-- Section: Social media -->\n+  </div>\n+  <!-- Grid container -->\n+\n+  <!-- Copyright -->\n+  <div class=\"text-center p-3\" style=\"background-color: rgba(0, 0, 0, 0.2);\">\n+    © 2020 Copyright:\n+    <a class=\"text-white\" href=\"https://mdbootstrap.com/\">MDBootstrap.com</a>\n+  </div>\n+  <!-- Copyright -->\n+</footer>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692970917390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n   </div>\n   <!-- Grid container -->\n \n   <!-- Copyright -->\n-  <div class=\"text-center p-3\" style=\"background-color: rgba(0, 0, 0, 0.2);\">\n+  <div class=\"text-center p-3\" style=\"background-color: );\">\n     © 2020 Copyright:\n     <a class=\"text-white\" href=\"https://mdbootstrap.com/\">MDBootstrap.com</a>\n   </div>\n   <!-- Copyright -->\n"
+                },
+                {
+                    "date": 1692970923171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n   </div>\n   <!-- Grid container -->\n \n   <!-- Copyright -->\n-  <div class=\"text-center p-3\" style=\"background-color: );\">\n+  <div class=\"text-center p-3\" style=\"background-color: white);\">\n     © 2020 Copyright:\n     <a class=\"text-white\" href=\"https://mdbootstrap.com/\">MDBootstrap.com</a>\n   </div>\n   <!-- Copyright -->\n"
+                },
+                {
+                    "date": 1692970959172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-<footer class=\"bg-dark text-center text-white\">\n+<footer class=\"bg-lig text-center text-white\">\n   <!-- Grid container -->\n   <div class=\"container p-4 pb-0\">\n     <!-- Section: Social media -->\n     <section class=\"mb-4\">\n@@ -37,9 +37,9 @@\n   </div>\n   <!-- Grid container -->\n \n   <!-- Copyright -->\n-  <div class=\"text-center p-3\" style=\"background-color: white);\">\n+  <div class=\"text-center p-3\" style=\"background-color: rgba(0, 0, 0, 0.2);\">\n     © 2020 Copyright:\n     <a class=\"text-white\" href=\"https://mdbootstrap.com/\">MDBootstrap.com</a>\n   </div>\n   <!-- Copyright -->\n"
+                },
+                {
+                    "date": 1692970972864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-<footer class=\"bg-lig text-center text-white\">\n+<footer class=\"bg-ligth text-center text-black\">\n   <!-- Grid container -->\n   <div class=\"container p-4 pb-0\">\n     <!-- Section: Social media -->\n     <section class=\"mb-4\">\n"
+                },
+                {
+                    "date": 1692970991468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n   </div>\n   <!-- Grid container -->\n \n   <!-- Copyright -->\n-  <div class=\"text-center p-3\" style=\"background-color: rgba(0, 0, 0, 0.2);\">\n+  <div class=\"text-center p-3\" style=\"background-color: \">\n     © 2020 Copyright:\n     <a class=\"text-white\" href=\"https://mdbootstrap.com/\">MDBootstrap.com</a>\n   </div>\n   <!-- Copyright -->\n"
+                },
+                {
+                    "date": 1692970996897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n   </div>\n   <!-- Grid container -->\n \n   <!-- Copyright -->\n-  <div class=\"text-center p-3\" style=\"background-color: \">\n+  <div class=\"text-center p-3\" style=\"background-color: #ffff\">\n     © 2020 Copyright:\n     <a class=\"text-white\" href=\"https://mdbootstrap.com/\">MDBootstrap.com</a>\n   </div>\n   <!-- Copyright -->\n"
+                },
+                {
+                    "date": 1692971007315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n   </div>\n   <!-- Grid container -->\n \n   <!-- Copyright -->\n-  <div class=\"text-center p-3\" style=\"background-color: #ffff\">\n+  <div class=\"text-center p-3\" style=\"background-color: rgba(0, 0, 0, 0.2);\">\n     © 2020 Copyright:\n     <a class=\"text-white\" href=\"https://mdbootstrap.com/\">MDBootstrap.com</a>\n   </div>\n   <!-- Copyright -->\n"
+                }
+            ],
+            "date": 1692970852204,
+            "name": "Commit-0",
+            "content": "collapse navbar-collapse "
+        }
+    ]
+}

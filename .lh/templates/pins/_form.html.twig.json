@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 8,
+            "activePatchIndex": 36,
             "patches": [
                 {
                     "date": 1692885487648,
@@ -40,6 +40,118 @@
                 {
                     "date": 1692967553838,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n-    <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate>>\n+    <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate>\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968496024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n-    <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate>\n+    <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\">\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968501279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n-    <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\">\n+    <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn->\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968513495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n-    <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn->\n+    <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary \">\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968554594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n-    <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary \">\n+    <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-clock\">\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968564650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n-    <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-clock\">\n+    <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968718612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n+\n+    \n     <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968726455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n \n-    \n+    <button></button>\n     <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968732244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n \n-    <button></button>\n+    <button clas></button>\n     <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968752041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n \n-    <button clas></button>\n+      <button class=\"btn btn-primary\" type=\"button\">Button</button>\n     <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968769994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n \n-      <button class=\"btn btn-primary\" type=\"button\">Button</button>\n+    div\n+    <button class=\"btn btn-primary\" type=\"button\">Button</button>\n     <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968775326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n \n-    div\n+    <div></div>\n     <button class=\"btn btn-primary\" type=\"button\">Button</button>\n     <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968780482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n \n-    <div></div>\n+    <div>\n     <button class=\"btn btn-primary\" type=\"button\">Button</button>\n+\n+    </div>\n     <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968787685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n \n-    <div>\n-    <button class=\"btn btn-primary\" type=\"button\">Button</button>\n-\n+    <div >\n+        <button class=\"btn btn-primary\" type=\"button\">Button</button>\n     </div>\n     <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968797355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n \n-    <div >\n+    <div d-grid gap-2 col-6 mx-auto>\n         <button class=\"btn btn-primary\" type=\"button\">Button</button>\n     </div>\n     <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968802577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n \n-    <div d-grid gap-2 col-6 mx-auto>\n+    <div class=\"d-grid gap-2 col-6 mx-auto\">\n         <button class=\"btn btn-primary\" type=\"button\">Button</button>\n     </div>\n     <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968814906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n \n-    <div class=\"d-grid gap-2 col-6 mx-auto\">\n+    <div class=\"d-grid gap-1 col-6 mx-auto\">\n         <button class=\"btn btn-primary\" type=\"button\">Button</button>\n     </div>\n     <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968824524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n \n     <div class=\"d-grid gap-1 col-6 mx-auto\">\n-        <button class=\"btn btn-primary\" type=\"button\">Button</button>\n+        <button class=\"btn btn-primary b\" type=\"button\">Button</button>\n     </div>\n     <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968837122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n \n     <div class=\"d-grid gap-1 col-6 mx-auto\">\n-        <button class=\"btn btn-primary b\" type=\"button\">Button</button>\n     </div>\n     <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968845177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n \n+        <button class=\"btn btn-primary btn-block\" type=\"button\">Button</button>\n+\n     <div class=\"d-grid gap-1 col-6 mx-auto\">\n     </div>\n-    <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n+    {# <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\"> #}\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968878784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,7 @@\n     {{ form_widget(Form) }}\n \n         <button class=\"btn btn-primary btn-block\" type=\"button\">Button</button>\n \n-    <div class=\"d-grid gap-1 col-6 mx-auto\">\n-    </div>\n-    {# <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\"> #}\n+    \n+    <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\"> #}\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968890833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n     {{ form_widget(Form) }}\n \n         <button class=\"btn btn-primary btn-block\" type=\"button\">Button</button>\n \n-    \n-    <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\"> #}\n+    div\n+    <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968897582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,6 @@\n     {{ form_widget(Form) }}\n \n         <button class=\"btn btn-primary btn-block\" type=\"button\">Button</button>\n \n-    div\n-    <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n+    <div></div>\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968937382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,8 @@\n     {{ form_widget(Form) }}\n \n         <button class=\"btn btn-primary btn-block\" type=\"button\">Button</button>\n \n-    <div></div>\n+    <div class=\"d-grid gap-2 col-6 mx-auto\">\n+        <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n+    </div>\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968950216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,8 @@\n     {{ form_widget(Form) }}\n \n         <button class=\"btn btn-primary btn-block\" type=\"button\">Button</button>\n \n-    <div class=\"d-grid gap-2 col-6 mx-auto\">\n+    <div class=\"d-grid mx-auto\">\n         <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n     </div>\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968959489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,8 @@\n     {{ form_widget(Form) }}\n \n         <button class=\"btn btn-primary btn-block\" type=\"button\">Button</button>\n \n-    <div class=\"d-grid mx-auto\">\n+    <div class=\"mx-auto\">\n         <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n     </div>\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968968275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n \n-        <button class=\"btn btn-primary btn-block\" type=\"button\">Button</button>\n \n     <div class=\"mx-auto\">\n         <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n     </div>\n"
+                },
+                {
+                    "date": 1692968977937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n \n+        <button class=\"btn btn-primary btn-block\" type=\"button\">Button</button>\n \n-    <div class=\"mx-auto\">\n+    <div class=\"d-grid gap-2 col-6 mx-auto\">\n         <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n     </div>\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692968984650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n {{ form_start(Form) }}\n     {{ form_widget(Form) }}\n \n-        <button class=\"btn btn-primary btn-block\" type=\"button\">Button</button>\n-\n-    <div class=\"d-grid gap-2 col-6 mx-auto\">\n+        \n+    <div class=\"d-grid mx-auto\">\n         <input type=\"submit\" value=\"{{ submitButtonText|default('Create Pin') }}\" formnovalidate class=\"btn btn-primary btn-block\">\n     </div>\n {{ form_end(Form) }}\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1692885487648,

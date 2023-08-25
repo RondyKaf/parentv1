@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 6,
+            "activePatchIndex": 19,
             "patches": [
                 {
                     "date": 1692966665718,
@@ -32,6 +32,58 @@
                 {
                     "date": 1692966762913,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n         {% endblock %}\n     </head>\n     <body>\n \n-       {{ include('layouts/partials/_flash_message) }}\n+       {{ include('layouts/partials/_flash_messages.html.) }}\n         <nav>\n             <ul>\n                 <li>\n                     <a href=\"{{ path('app_home') }}\">Home</a>\n"
+                },
+                {
+                    "date": 1692968139684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n         <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">\n         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}\n         {% block stylesheets %}\n             {{ encore_entry_link_tags('app') }}\n+            <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\n             \n         {% endblock %}\n \n         <style>\n@@ -33,9 +34,9 @@\n         {% endblock %}\n     </head>\n     <body>\n \n-       {{ include('layouts/partials/_flash_messages.html.) }}\n+       {{ include('layouts/partials/_flash_messages.html.twig') }}\n         <nav>\n             <ul>\n                 <li>\n                     <a href=\"{{ path('app_home') }}\">Home</a>\n"
+                },
+                {
+                    "date": 1692969195327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n                 padding: 10px;\n                 margin:0px;\n                 color: white;\n                 text-align:center;\n+                mar\n \n             }\n             .alert-success{\n                 background-color: green\n"
+                },
+                {
+                    "date": 1692969208933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,10 @@\n                 padding: 10px;\n                 margin:0px;\n                 color: white;\n                 text-align:center;\n-                mar\n+                border:none;\n+                border-radius:\n \n             }\n             .alert-success{\n                 background-color: green\n"
+                },
+                {
+                    "date": 1692969393464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n                 margin:0px;\n                 color: white;\n                 text-align:center;\n                 border:none;\n-                border-radius:\n+                border-radius:0px;\n \n             }\n             .alert-success{\n                 background-color: green\n@@ -35,9 +35,9 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-\n+        \n        {{ include('layouts/partials/_flash_messages.html.twig') }}\n         <nav>\n             <ul>\n                 <li>\n"
+                },
+                {
+                    "date": 1692969403997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-        \n+       {{ include('layouts/partials/_na.html.twig') }}\n        {{ include('layouts/partials/_flash_messages.html.twig') }}\n         <nav>\n             <ul>\n                 <li>\n"
+                },
+                {
+                    "date": 1692969760845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,19 +35,10 @@\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n     <body>\n-       {{ include('layouts/partials/_na.html.twig') }}\n+       {{ include('layouts/partials/_nav.html.twig') }}\n        {{ include('layouts/partials/_flash_messages.html.twig') }}\n-        <nav>\n-            <ul>\n-                <li>\n-                    <a href=\"{{ path('app_home') }}\">Home</a>\n-                </li>\n-                <li>\n-                    <a href=\"{{ path('app_create_pin')}}\">New Pin</a>\n-                </li>\n-            </ul>\n-        </nav>\n+        \n         {% block body %}{% endblock %}\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1692970878352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,6 +39,8 @@\n        {{ include('layouts/partials/_nav.html.twig') }}\n        {{ include('layouts/partials/_flash_messages.html.twig') }}\n         \n         {% block body %}{% endblock %}\n+       {{ include('layouts/partials/_nav.html.twig') }}\n+\n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1692970883901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,8 @@\n        {{ include('layouts/partials/_nav.html.twig') }}\n        {{ include('layouts/partials/_flash_messages.html.twig') }}\n         \n         {% block body %}{% endblock %}\n-       {{ include('layouts/partials/_nav.html.twig') }}\n+       {{ include('layouts/partials/_footer.html.twig') }}\n \n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1692971316212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,10 @@\n     <body>\n        {{ include('layouts/partials/_nav.html.twig') }}\n        {{ include('layouts/partials/_flash_messages.html.twig') }}\n         \n+        <main>\n+        </main>\n         {% block body %}{% endblock %}\n        {{ include('layouts/partials/_footer.html.twig') }}\n \n     </body>\n"
+                },
+                {
+                    "date": 1692971322511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,10 +39,11 @@\n        {{ include('layouts/partials/_nav.html.twig') }}\n        {{ include('layouts/partials/_flash_messages.html.twig') }}\n         \n         <main>\n+            {% block body %}{% endblock %}\n+\n         </main>\n-        {% block body %}{% endblock %}\n        {{ include('layouts/partials/_footer.html.twig') }}\n \n     </body>\n </html>\n"
+                },
+                {
+                    "date": 1692971356284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,11 +38,10 @@\n     <body>\n        {{ include('layouts/partials/_nav.html.twig') }}\n        {{ include('layouts/partials/_flash_messages.html.twig') }}\n         \n-        <main>\n+        <main> \n             {% block body %}{% endblock %}\n-\n         </main>\n        {{ include('layouts/partials/_footer.html.twig') }}\n \n     </body>\n"
+                },
+                {
+                    "date": 1692971369094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     <body>\n        {{ include('layouts/partials/_nav.html.twig') }}\n        {{ include('layouts/partials/_flash_messages.html.twig') }}\n         \n-        <main> \n+        <main role=\"main\" class> \n             {% block body %}{% endblock %}\n         </main>\n        {{ include('layouts/partials/_footer.html.twig') }}\n \n"
+                },
+                {
+                    "date": 1692971374442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     <body>\n        {{ include('layouts/partials/_nav.html.twig') }}\n        {{ include('layouts/partials/_flash_messages.html.twig') }}\n         \n-        <main role=\"main\" class> \n+        <main role=\"main\" class=\"container\"> \n             {% block body %}{% endblock %}\n         </main>\n        {{ include('layouts/partials/_footer.html.twig') }}\n \n"
                 }
             ],
             "date": 1692966665718,
