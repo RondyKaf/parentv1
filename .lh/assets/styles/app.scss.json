@@ -1,0 +1,114 @@
+{
+    "sourceFile": "assets/styles/app.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 24,
+            "patches": [
+                {
+                    "date": 1692975700039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692975707291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,18 +16,16 @@\n     text-align: center;\n     border: none;\n     border-radius: 0px;\n \n-    &.\n+    &.alert-success {\n+        background-color: green\n+    }\n }\n \n-.alert-success {\n-    background-color: green\n-}\n \n-.alert-error {\n-    background-color: red\n-}\n \n+\n+\n .alert-info {\n     background-color: blue\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692975713641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,13 +19,10 @@\n \n     &.alert-success {\n         background-color: green\n     }\n+    .alert-error {\n+        background-color: red\n+    }\n }\n \n \n-\n-\n-\n\\ No newline at end of file\n-.alert-info {\n-    background-color: blue\n-}\n"
+                },
+                {
+                    "date": 1692975719545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,7 +22,10 @@\n     }\n     .alert-error {\n         background-color: red\n     }\n+    .alert-info {\n+        background-color: blue\n+    }s\n }\n \n \n"
+                },
+                {
+                    "date": 1692975765001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,13 +19,13 @@\n \n     &.alert-success {\n         background-color: green\n     }\n-    .alert-error {\n+\n+    &.alert-error {\n         background-color: red\n     }\n+\n     .alert-info {\n         background-color: blue\n-    }s\n-}\n-\n-\n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692978722864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\n \n+&primary-font : \"\"\n body {\n     background-color: lightgray;\n }\n \n@@ -24,8 +25,8 @@\n     &.alert-error {\n         background-color: red\n     }\n \n-    .alert-info {\n+    &.alert-info {\n         background-color: blue\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692978731679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,14 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\n \n-&primary-font : \"\"\n+&primary-font : \"\";\n body {\n     background-color: lightgray;\n }\n \n html,\n body {\n-    font-family: 'Montserrat', sans-serif;\n+    font-family: , sans-serif;\n }\n \n .alert {\n     padding: 10px;\n"
+                },
+                {
+                    "date": 1692978744669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\n \n-&primary-font : \"\";\n+$primary-font : 'Montserrat';\n body {\n     background-color: lightgray;\n }\n \n"
+                },
+                {
+                    "date": 1692978751332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n \n html,\n body {\n-    font-family: , sans-serif;\n+    font-family:$primary, sans-serif;\n }\n \n .alert {\n     padding: 10px;\n"
+                },
+                {
+                    "date": 1692978891433,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,13 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\n \n-$primary-font : 'Montserrat';\n body {\n     background-color: lightgray;\n }\n \n html,\n body {\n-    font-family:$primary, sans-serif;\n+    font-family:$primary-font, sans-serif;\n }\n \n .alert {\n     padding: 10px;\n"
+                },
+                {
+                    "date": 1692978902060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\n-\n+@\n body {\n     background-color: lightgray;\n }\n \n"
+                },
+                {
+                    "date": 1692978908085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\n-@\n+@import url('');\n body {\n     background-color: lightgray;\n }\n \n"
+                },
+                {
+                    "date": 1692978915601,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\n-@import url('');\n+@import url('shared/');\n body {\n     background-color: lightgray;\n }\n \n"
+                },
+                {
+                    "date": 1692978933516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,14 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\n-@import url('shared/');\n+@import url('shared/_variable');\n+\n body {\n     background-color: lightgray;\n }\n \n html,\n body {\n-    font-family:$primary-font, sans-serif;\n+    font-family: $primary-font, sans-serif;\n }\n \n .alert {\n     padding: 10px;\n"
+                },
+                {
+                    "date": 1692979011879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\n-@import url('shared/_variable');\n+@import url('shared/_variable.scss');\n \n body {\n     background-color: lightgray;\n }\n"
+                },
+                {
+                    "date": 1692979120357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\n-@import url('shared/_variable.scss');\n \n+\n body {\n     background-color: lightgray;\n }\n \n"
+                },
+                {
+                    "date": 1692979127944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\n \n \n+\n body {\n     background-color: lightgray;\n }\n \n"
+                },
+                {
+                    "date": 1692979137024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\n \n+$primary-font : 'Montserrat';\n \n-\n body {\n     background-color: lightgray;\n }\n \n"
+                },
+                {
+                    "date": 1692979249199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\n \n-$primary-font : 'Montserrat';\n \n+\n body {\n     background-color: lightgray;\n }\n \n"
+                },
+                {
+                    "date": 1692979256008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\n \n+impo\n \n-\n body {\n     background-color: lightgray;\n }\n \n"
+                },
+                {
+                    "date": 1692979262194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\n \n-impo\n+@impor\n \n body {\n     background-color: lightgray;\n }\n"
+                },
+                {
+                    "date": 1692979273174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\n \n-@impor\n+@import \"\"\n \n body {\n     background-color: lightgray;\n }\n"
+                },
+                {
+                    "date": 1692979285068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\n \n-@import \"\"\n+@import \"shared/variable\";\n \n body {\n     background-color: lightgray;\n }\n"
+                },
+                {
+                    "date": 1692979952500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\n-\n+@import \"~bootstrap/scss/bootstrap\";\n @import \"shared/variable\";\n \n body {\n     background-color: lightgray;\n"
+                },
+                {
+                    "date": 1692980055807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\n @import \"~bootstrap/scss/bootstrap\";\n @import \"shared/variable\";\n \n-body {\n-    background-color: lightgray;\n-}\n+// body {\n+//     background-color: lightgray;\n+// }\n \n html,\n body {\n     font-family: $primary-font, sans-serif;\n"
+                }
+            ],
+            "date": 1692975700039,
+            "name": "Commit-0",
+            "content": "@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\n\nbody {\n    background-color: lightgray;\n}\n\nhtml,\nbody {\n    font-family: 'Montserrat', sans-serif;\n}\n\n.alert {\n    padding: 10px;\n    margin: 0px;\n    color: white;\n    text-align: center;\n    border: none;\n    border-radius: 0px;\n\n    &.\n}\n\n.alert-success {\n    background-color: green\n}\n\n.alert-error {\n    background-color: red\n}\n\n.alert-info {\n    background-color: blue\n}"
+        }
+    ]
+}

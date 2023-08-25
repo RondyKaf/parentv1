@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 27,
+            "activePatchIndex": 35,
             "patches": [
                 {
                     "date": 1692966665718,
@@ -116,6 +116,38 @@
                 {
                     "date": 1692972263570,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,11 +14,11 @@\n             \n         {% endblock %}\n \n         <style>\n-        html, body{\n-            font-family: 'Montserrat', sans-serif;\n-        }\n+            html, body{\n+                font-family: 'Montserrat', sans-serif;\n+            }\n             .alert{\n                 padding: 10px;\n                 margin:0px;\n                 color: white;\n"
+                },
+                {
+                    "date": 1692972376698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,29 +14,9 @@\n             \n         {% endblock %}\n \n         <style>\n-            html, body{\n-                font-family: 'Montserrat', sans-serif;\n-            }\n-            .alert{\n-                padding: 10px;\n-                margin:0px;\n-                color: white;\n-                text-align:center;\n-                border:none;\n-                border-radius:0px;\n-\n-            }\n-            .alert-success{\n-                background-color: green\n-            }\n-            .alert-error{\n-                background-red: green\n-            }\n-            .alert-info{\n-                background-color: blue\n-            }\n+            \n         </style>\n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n"
+                },
+                {
+                    "date": 1692972492737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,14 +10,12 @@\n         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}\n         {% block stylesheets %}\n             {{ encore_entry_link_tags('app') }}\n             <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\n-            \n+            link\n         {% endblock %}\n \n-        <style>\n-            \n-        </style>\n+        \n         {% block javascripts %}\n             {{ encore_entry_script_tags('app') }}\n         {% endblock %}\n     </head>\n"
+                },
+                {
+                    "date": 1692972515048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}\n         {% block stylesheets %}\n             {{ encore_entry_link_tags('app') }}\n             <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\n-            link\n+            <link rel=\"stylesheet\" href=\"{{ }}\">\n         {% endblock %}\n \n         \n         {% block javascripts %}\n"
+                },
+                {
+                    "date": 1692972524220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}\n         {% block stylesheets %}\n             {{ encore_entry_link_tags('app') }}\n             <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\n-            <link rel=\"stylesheet\" href=\"{{ }}\">\n+            <link rel=\"stylesheet\" href=\"{{ asset() }}\">\n         {% endblock %}\n \n         \n         {% block javascripts %}\n"
+                },
+                {
+                    "date": 1692972534761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}\n         {% block stylesheets %}\n             {{ encore_entry_link_tags('app') }}\n             <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\n-            <link rel=\"stylesheet\" href=\"{{ asset() }}\">\n+            <link rel=\"stylesheet\" href=\"{{ asset('css/app.css') }}\">\n         {% endblock %}\n \n         \n         {% block javascripts %}\n"
+                },
+                {
+                    "date": 1692974555284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}\n         {% block stylesheets %}\n             {{ encore_entry_link_tags('app') }}\n             <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\n-            <link rel=\"stylesheet\" href=\"{{ asset('css/app.css') }}\">\n+            <link rel=\"stylesheet\" href=\"{{ asset('build/app.css') }}\">\n         {% endblock %}\n \n         \n         {% block javascripts %}\n"
+                },
+                {
+                    "date": 1692974726904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n         <link href=\"https://fonts.googleapis.com/css2?family=Montserrat&display=swap\" rel=\"stylesheet\">\n         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}\n         {% block stylesheets %}\n             {{ encore_entry_link_tags('app') }}\n-            <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\">\n+            \n             <link rel=\"stylesheet\" href=\"{{ asset('build/app.css') }}\">\n         {% endblock %}\n \n         \n"
+                },
+                {
+                    "date": 1692974746135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,8 @@\n         <link href=\"https://fonts.googleapis.com/css2?family=Montserrat&display=swap\" rel=\"stylesheet\">\n         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}\n         {% block stylesheets %}\n             {{ encore_entry_link_tags('app') }}\n-            \n-            <link rel=\"stylesheet\" href=\"{{ asset('build/app.css') }}\">\n         {% endblock %}\n \n         \n         {% block javascripts %}\n"
                 }
             ],
             "date": 1692966665718,

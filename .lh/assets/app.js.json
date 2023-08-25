@@ -1,0 +1,54 @@
+{
+    "sourceFile": "assets/app.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1692975432740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692975680901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n  * (and its CSS file) in your base layout (base.html.twig).\n  */\n \n // any CSS you import will output into a single css file (app.css in this case)\n-import './styles/sapp.css';\n+import './styles/app.css';\n \n // start the Stimulus application\n import './bootstrap';\n"
+                },
+                {
+                    "date": 1692980214891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,10 @@\n  * (and its CSS file) in your base layout (base.html.twig).\n  */\n \n // any CSS you import will output into a single css file (app.css in this case)\n-import './styles/app.css';\n+import './styles/app.scss';\n \n+const $ = require('jquery');\n+\n // start the Stimulus application\n import './bootstrap';\n"
+                },
+                {
+                    "date": 1692980233231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,8 @@\n // any CSS you import will output into a single css file (app.css in this case)\n import './styles/app.scss';\n \n const $ = require('jquery');\n+require('bootstrap');\n \n // start the Stimulus application\n import './bootstrap';\n"
+                },
+                {
+                    "date": 1692980248334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,6 +10,10 @@\n \n const $ = require('jquery');\n require('bootstrap');\n \n+$(document).ready(function () {\n+    $('[data-toggle=\"popover\"]').popover();\n+});\n+\n // start the Stimulus application\n import './bootstrap';\n"
+                },
+                {
+                    "date": 1692980347593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,7 @@\n \n const $ = require('jquery');\n require('bootstrap');\n \n-$(document).ready(function () {\n-    $('[data-toggle=\"popover\"]').popover();\n-});\n \n // start the Stimulus application\n import './bootstrap';\n"
+                },
+                {
+                    "date": 1692980352670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n // any CSS you import will output into a single css file (app.css in this case)\n import './styles/app.scss';\n \n const $ = require('jquery');\n-require('bootstrap');\n+//require('bootstrap');\n \n \n // start the Stimulus application\n import './bootstrap';\n"
+                },
+                {
+                    "date": 1692980472216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n // any CSS you import will output into a single css file (app.css in this case)\n import './styles/app.scss';\n \n const $ = require('jquery');\n-//require('bootstrap');\n \n \n // start the Stimulus application\n import './bootstrap';\n"
+                },
+                {
+                    "date": 1692980484910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n // any CSS you import will output into a single css file (app.css in this case)\n import './styles/app.scss';\n \n const $ = require('jquery');\n+require('bootstrap');\n \n \n // start the Stimulus application\n import './bootstrap';\n"
+                },
+                {
+                    "date": 1692980492011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,7 +10,11 @@\n \n const $ = require('jquery');\n require('bootstrap');\n \n+$(document).ready(function () {\n+    $('[data-toggle=\"popover\"]').popover();\n+});\n \n+\n // start the Stimulus application\n import './bootstrap';\n"
+                }
+            ],
+            "date": 1692975432740,
+            "name": "Commit-0",
+            "content": "/*\n * Welcome to your app's main JavaScript file!\n *\n * We recommend including the built version of this JavaScript file\n * (and its CSS file) in your base layout (base.html.twig).\n */\n\n// any CSS you import will output into a single css file (app.css in this case)\nimport './styles/sapp.css';\n\n// start the Stimulus application\nimport './bootstrap';\n"
+        }
+    ]
+}

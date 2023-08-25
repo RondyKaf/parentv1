@@ -1,0 +1,46 @@
+{
+    "sourceFile": "public/build/app.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1692975568268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692975581428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     color: white;\n     text-align: center;\n     border: none;\n     border-radius: 0px;\n-    \n+    &\n }\n \n .alert-success {\n     background-color: green\n"
+                },
+                {
+                    "date": 1692975587170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,12 +23,10 @@\n     border-radius: 0px;\n     &\n }\n \n-.alert-success {\n-    background-color: green\n-}\n \n+\n .alert-error {\n     background-color: red\n }\n \n"
+                },
+                {
+                    "date": 1692975592894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,13 @@\n     color: white;\n     text-align: center;\n     border: none;\n     border-radius: 0px;\n-    &\n+    \n+    &.alert-success {\n+        background-color: green\n+    }\n+\n }\n \n \n \n"
+                },
+                {
+                    "date": 1692975625050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,16 +21,14 @@\n     text-align: center;\n     border: none;\n     border-radius: 0px;\n     \n-    &.alert-success {\n-        background-color: green\n-    }\n+}\n \n+.alert-success {\n+    background-color: green\n }\n \n-\n-\n .alert-error {\n     background-color: red\n }\n \n"
+                },
+                {
+                    "date": 1692975638245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     color: white;\n     text-align: center;\n     border: none;\n     border-radius: 0px;\n-    \n+       \n }\n \n .alert-success {\n     background-color: green\n"
+                },
+                {
+                    "date": 1692975644884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,15 +20,16 @@\n     color: white;\n     text-align: center;\n     border: none;\n     border-radius: 0px;\n-       \n+    \n+    &.alert-success {\n+        background-color: green\n+    }\n }\n \n-.alert-success {\n-    background-color: green\n-}\n \n+\n .alert-error {\n     background-color: red\n }\n \n"
+                },
+                {
+                    "date": 1692975667995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,16 +20,15 @@\n     color: white;\n     text-align: center;\n     border: none;\n     border-radius: 0px;\n-    \n-    &.alert-success {\n-        background-color: green\n-    }\n+       \n }\n \n+.alert-success {\n+    background-color: green\n+}\n \n-\n .alert-error {\n     background-color: red\n }\n \n"
+                }
+            ],
+            "date": 1692975568268,
+            "name": "Commit-0",
+            "content": "/*!**************************************************************************************************************!*\\\n  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[1].use[1]!./assets/styles/app.css ***!\n  \\**************************************************************************************************************/\n@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);\n/*!******************************************************************************************************************!*\\\n  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[1].use[1]!./assets/styles/app.css (1) ***!\n  \\******************************************************************************************************************/\nbody {\n    background-color: lightgray;\n}\n\nhtml,\nbody {\n    font-family: 'Montserrat', sans-serif;\n}\n\n.alert {\n    padding: 10px;\n    margin: 0px;\n    color: white;\n    text-align: center;\n    border: none;\n    border-radius: 0px;\n    \n}\n\n.alert-success {\n    background-color: green\n}\n\n.alert-error {\n    background-color: red\n}\n\n.alert-info {\n    background-color: blue\n}\n\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwLmNzcyIsIm1hcHBpbmdzIjoiOzs7Ozs7O0FBRUE7SUFDSSwyQkFBMkI7QUFDL0I7O0FBRUE7O0lBRUkscUNBQXFDO0FBQ3pDOztBQUVBO0lBQ0ksYUFBYTtJQUNiLFdBQVc7SUFDWCxZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLFlBQVk7SUFDWixrQkFBa0I7O0FBRXRCOztBQUVBO0lBQ0k7QUFDSjs7QUFFQTtJQUNJO0FBQ0o7O0FBRUE7SUFDSTtBQUNKLEMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9hc3NldHMvc3R5bGVzL2FwcC5jc3MiXSwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9TW9udHNlcnJhdCZkaXNwbGF5PXN3YXAnKTtcblxuYm9keSB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogbGlnaHRncmF5O1xufVxuXG5odG1sLFxuYm9keSB7XG4gICAgZm9udC1mYW1pbHk6ICdNb250c2VycmF0Jywgc2Fucy1zZXJpZjtcbn1cblxuLmFsZXJ0IHtcbiAgICBwYWRkaW5nOiAxMHB4O1xuICAgIG1hcmdpbjogMHB4O1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgYm9yZGVyOiBub25lO1xuICAgIGJvcmRlci1yYWRpdXM6IDBweDtcblxufVxuXG4uYWxlcnQtc3VjY2VzcyB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JlZW5cbn1cblxuLmFsZXJ0LWVycm9yIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZWRcbn1cblxuLmFsZXJ0LWluZm8ge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGJsdWVcbn0iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=*/"
+        }
+    ]
+}

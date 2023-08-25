@@ -1,0 +1,26 @@
+{
+    "sourceFile": "public/css/app.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1692972386253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692972392358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n .alert-success{\n     background-color: green\n }\n .alert-error{\n-    background-red: green\n+    background-r: green\n }\n .alert-info{\n     background-color: blue\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1692972401178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,21 +1,26 @@\n-html, body{\n+html,\n+body {\n     font-family: 'Montserrat', sans-serif;\n }\n-.alert{\n+\n+.alert {\n     padding: 10px;\n-    margin:0px;\n+    margin: 0px;\n     color: white;\n-    text-align:center;\n-    border:none;\n-    border-radius:0px;\n+    text-align: center;\n+    border: none;\n+    border-radius: 0px;\n \n }\n-.alert-success{\n+\n+.alert-success {\n     background-color: green\n }\n-.alert-error{\n-    background-color: green\n+\n+.alert-error {\n+    background-color: red\n }\n-.alert-info{\n+\n+.alert-info {\n     background-color: blue\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1692972386253,
+            "name": "Commit-0",
+            "content": "html, body{\n    font-family: 'Montserrat', sans-serif;\n}\n.alert{\n    padding: 10px;\n    margin:0px;\n    color: white;\n    text-align:center;\n    border:none;\n    border-radius:0px;\n\n}\n.alert-success{\n    background-color: green\n}\n.alert-error{\n    background-red: green\n}\n.alert-info{\n    background-color: blue\n}"
+        }
+    ]
+}
